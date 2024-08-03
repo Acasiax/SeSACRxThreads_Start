@@ -75,12 +75,15 @@ class SimpleShoppingListViewController: UIViewController, UITableViewDelegate {
     
     private func handleTableViewSelection() {
         tableView.rx.itemSelected
-            .subscribe(onNext: { [weak self] indexPath in
-                self?.toggleChecked(at: indexPath.row)
+            .observe(on: MainScheduler.instance)
+            .subscribe(with: self, onNext: { owner, indexPath in
+                owner.toggleChecked(at: indexPath.row)
+            }, onDisposed: { owner in
+                print("Disposed")
             })
             .disposed(by: disposeBag)
     }
-    
+
     // MARK: - 액세서리 뷰
     
     private func createAccessoryView(isFavorite: Bool, index: Int) -> UIView {
