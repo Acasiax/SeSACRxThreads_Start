@@ -18,6 +18,8 @@
 		AA7271A22C5E5B7F007551C4 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = AA7271A12C5E5B7F007551C4 /* RxCocoa */; };
 		AA7271A42C5E5B7F007551C4 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AA7271A32C5E5B7F007551C4 /* RxSwift */; };
 		AA7271A62C5E5C69007551C4 /* CustomSImpleTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271A52C5E5C69007551C4 /* CustomSImpleTableVC.swift */; };
+		AA7271A82C5E7FE9007551C4 /* BasicButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271A72C5E7FE9007551C4 /* BasicButtonViewController.swift */; };
+		AA7271AA2C5E84FA007551C4 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271A92C5E84FA007551C4 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		AA7271952C5E5B2E007551C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA72719B2C5E5B50007551C4 /* BucketListTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListTableVC.swift; sourceTree = "<group>"; };
 		AA7271A52C5E5C69007551C4 /* CustomSImpleTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSImpleTableVC.swift; sourceTree = "<group>"; };
+		AA7271A72C5E7FE9007551C4 /* BasicButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicButtonViewController.swift; sourceTree = "<group>"; };
+		AA7271A92C5E84FA007551C4 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +70,8 @@
 		AA7271862C5E5B2D007551C4 /* SeSACRxThreads_Start */ = {
 			isa = PBXGroup;
 			children = (
-				AA7271A52C5E5C69007551C4 /* CustomSImpleTableVC.swift */,
 				AA72719B2C5E5B50007551C4 /* BucketListTableVC.swift */,
+				AA7271AB2C5E851D007551C4 /* Resource */,
 				AA7271872C5E5B2D007551C4 /* AppDelegate.swift */,
 				AA7271892C5E5B2D007551C4 /* SceneDelegate.swift */,
 				AA72718B2C5E5B2D007551C4 /* ViewController.swift */,
@@ -77,6 +81,16 @@
 				AA7271952C5E5B2E007551C4 /* Info.plist */,
 			);
 			path = SeSACRxThreads_Start;
+			sourceTree = "<group>";
+		};
+		AA7271AB2C5E851D007551C4 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				AA7271A92C5E84FA007551C4 /* BaseViewController.swift */,
+				AA7271A72C5E7FE9007551C4 /* BasicButtonViewController.swift */,
+				AA7271A52C5E5C69007551C4 /* CustomSImpleTableVC.swift */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,7 +176,9 @@
 				AA72718C2C5E5B2D007551C4 /* ViewController.swift in Sources */,
 				AA72719C2C5E5B50007551C4 /* BucketListTableVC.swift in Sources */,
 				AA7271882C5E5B2D007551C4 /* AppDelegate.swift in Sources */,
+				AA7271A82C5E7FE9007551C4 /* BasicButtonViewController.swift in Sources */,
 				AA72718A2C5E5B2D007551C4 /* SceneDelegate.swift in Sources */,
+				AA7271AA2C5E84FA007551C4 /* BaseViewController.swift in Sources */,
 				AA7271A62C5E5C69007551C4 /* CustomSImpleTableVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
