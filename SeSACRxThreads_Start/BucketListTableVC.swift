@@ -4,6 +4,7 @@
 //
 //  Created by 이윤지 on 8/3/24.
 //
+
 import UIKit
 import RxSwift
 import RxCocoa
@@ -48,14 +49,13 @@ class SimpleShoppingListViewController: UIViewController, UITableViewDelegate {
         }
         .disposed(by: disposeBag)
         
-        tableView.rx
-            .itemSelected
-            .subscribe(onNext: { indexPath in
-                var currentItems = self.items.value
-                currentItems[indexPath.row].isChecked.toggle()
-                self.items.accept(currentItems)
+        //셀 선택했을때
+        tableView.rx.itemSelected
+            .subscribe(onNext:  { indexPath in
+                print("선택했어 \(indexPath.row)")
             })
             .disposed(by: disposeBag)
+        
     }
     
     func createAccessoryView(isFavorite: Bool, index: Int) -> UIView {
@@ -63,14 +63,23 @@ class SimpleShoppingListViewController: UIViewController, UITableViewDelegate {
         let image = isFavorite ? UIImage(systemName: "star.fill") : UIImage(systemName: "star")
         button.setImage(image, for: .normal)
         button.tag = index
-        button.addTarget(self, action: #selector(favoriteButtonTapped(_:)), for: .touchUpInside)
+        
+        // Rx를 사용하여 버튼의 터치 이벤트 처리
+        button.rx.tap
+            .bind(with: self) { owner, _ in
+                owner.toggleFavorite(at: index)
+            }
+            .disposed(by: disposeBag)
+        
+        
         return button
+        
     }
     
-    @objc func favoriteButtonTapped(_ sender: UIButton) {
-        let index = sender.tag
-        var currentItems = items.value
-        currentItems[index].isFavorite.toggle()
-        items.accept(currentItems)
-    }
+    func toggleFavorite(at index: Int) {
+            var currentItems = items.value
+            currentItems[index].isFavorite.toggle()
+            items.accept(currentItems)
+        }
+    
 }
