@@ -27,6 +27,7 @@
 		AA7271B92C5F992D007551C4 /* PickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271B82C5F992D007551C4 /* PickerVC.swift */; };
 		AA7271BB2C5FA0DB007551C4 /* TableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271BA2C5FA0DB007551C4 /* TableViewVC.swift */; };
 		AA7271BD2C5FAA0A007551C4 /* SwitchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271BC2C5FAA0A007551C4 /* SwitchVC.swift */; };
+		AA7271BF2C5FADC3007551C4 /* TextFieldButtonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271BE2C5FADC3007551C4 /* TextFieldButtonVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		AA7271B82C5F992D007551C4 /* PickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerVC.swift; sourceTree = "<group>"; };
 		AA7271BA2C5FA0DB007551C4 /* TableViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewVC.swift; sourceTree = "<group>"; };
 		AA7271BC2C5FAA0A007551C4 /* SwitchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchVC.swift; sourceTree = "<group>"; };
+		AA7271BE2C5FADC3007551C4 /* TextFieldButtonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldButtonVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 				AA7271B82C5F992D007551C4 /* PickerVC.swift */,
 				AA7271BA2C5FA0DB007551C4 /* TableViewVC.swift */,
 				AA7271BC2C5FAA0A007551C4 /* SwitchVC.swift */,
+				AA7271BE2C5FADC3007551C4 /* TextFieldButtonVC.swift */,
 			);
 			name = "47회차 강의자료뽀개기";
 			path = "48회차 강의자료뽀개기";
@@ -230,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA7271BF2C5FADC3007551C4 /* TextFieldButtonVC.swift in Sources */,
 				AA7271BD2C5FAA0A007551C4 /* SwitchVC.swift in Sources */,
 				AA7271B92C5F992D007551C4 /* PickerVC.swift in Sources */,
 				AA7271AD2C5F5E36007551C4 /* BucketListTableVC2.swift in Sources */,

@@ -31,10 +31,15 @@ class SwitchVC: UIViewController {
             make.centerX.equalToSuperview()
         }
         
-        toggleSwitch.rx.isOn
-            .map{ $0 ? "스위치이스 온" : "스위치이스 오프" }
-            .bind(to: statusLabel.rx.text)
+//        toggleSwitch.rx.isOn
+//            .map{ $0 ? "스위치이스 온" : "스위치이스 오프" }
+//            .bind(to: statusLabel.rx.text)
+//            .disposed(by: disposeBag)
+        
+        Observable.of(false)
+            .bind(to: toggleSwitch.rx.isOn)
             .disposed(by: disposeBag)
+            
         
     }
     
