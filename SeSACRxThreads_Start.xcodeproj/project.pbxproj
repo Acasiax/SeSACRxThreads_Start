@@ -28,6 +28,7 @@
 		AA7271BB2C5FA0DB007551C4 /* TableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271BA2C5FA0DB007551C4 /* TableViewVC.swift */; };
 		AA7271BD2C5FAA0A007551C4 /* SwitchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271BC2C5FAA0A007551C4 /* SwitchVC.swift */; };
 		AA7271BF2C5FADC3007551C4 /* TextFieldButtonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271BE2C5FADC3007551C4 /* TextFieldButtonVC.swift */; };
+		AA7271C12C5FBEFD007551C4 /* JustOfFromTakeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271C02C5FBEFD007551C4 /* JustOfFromTakeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		AA7271BA2C5FA0DB007551C4 /* TableViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewVC.swift; sourceTree = "<group>"; };
 		AA7271BC2C5FAA0A007551C4 /* SwitchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchVC.swift; sourceTree = "<group>"; };
 		AA7271BE2C5FADC3007551C4 /* TextFieldButtonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldButtonVC.swift; sourceTree = "<group>"; };
+		AA7271C02C5FBEFD007551C4 /* JustOfFromTakeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustOfFromTakeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 				AA7271BA2C5FA0DB007551C4 /* TableViewVC.swift */,
 				AA7271BC2C5FAA0A007551C4 /* SwitchVC.swift */,
 				AA7271BE2C5FADC3007551C4 /* TextFieldButtonVC.swift */,
+				AA7271C02C5FBEFD007551C4 /* JustOfFromTakeVC.swift */,
 			);
 			name = "47회차 강의자료뽀개기";
 			path = "48회차 강의자료뽀개기";
@@ -247,6 +250,7 @@
 				AA7271BB2C5FA0DB007551C4 /* TableViewVC.swift in Sources */,
 				AA7271AA2C5E84FA007551C4 /* BaseViewController.swift in Sources */,
 				AA7271B32C5F79AE007551C4 /* PhoneNumberVC.swift in Sources */,
+				AA7271C12C5FBEFD007551C4 /* JustOfFromTakeVC.swift in Sources */,
 				AA7271A62C5E5C69007551C4 /* CustomSImpleTableVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
