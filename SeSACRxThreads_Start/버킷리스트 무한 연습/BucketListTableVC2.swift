@@ -165,7 +165,7 @@ class BucketListTableVC2: UIViewController, UITableViewDelegate {
     
     private func bindSearchBar() {
         searchBar.rx.text.orEmpty
-            .distinctUntilChanged()
+            .distinctUntilChanged() //연속된 중복 값을 필터링하는 데 사용됩니다. 즉, 이 연산자는 이전 값과 동일한 값이 연속적으로 발생하면 그 값을 무시하고, 이전 값과 다른 새로운 값이 발생할 때만 구독자에게 알립니다.
             .subscribe(with: self, onNext: { owner, query in
                 owner.filterItems(with: query)
             })
