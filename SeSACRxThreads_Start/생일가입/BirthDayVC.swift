@@ -91,9 +91,10 @@ class BirthdayViewController: UIViewController {
     
     let nextButton = PointButton(title: "가입하기")
     
+    //그냥 초기값임. 현재 날짜로 변경될 예정임
     let year = BehaviorRelay(value: 2024)
     let month = BehaviorRelay(value: 8)
-    let day = BehaviorRelay(value: 1)
+    let day = BehaviorRelay(value: 4)
     
     let disposeBag = DisposeBag()
     

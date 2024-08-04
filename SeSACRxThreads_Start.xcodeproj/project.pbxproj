@@ -23,6 +23,7 @@
 		AA7271AD2C5F5E36007551C4 /* BucketListTableVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271AC2C5F5E36007551C4 /* BucketListTableVC2.swift */; };
 		AA7271B12C5F76BF007551C4 /* BirthDayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271B02C5F76BF007551C4 /* BirthDayVC.swift */; };
 		AA7271B32C5F79AE007551C4 /* PhoneNumberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271B22C5F79AE007551C4 /* PhoneNumberVC.swift */; };
+		AA7271B52C5F9104007551C4 /* PasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271B42C5F9104007551C4 /* PasswordVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		AA7271AC2C5F5E36007551C4 /* BucketListTableVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListTableVC2.swift; sourceTree = "<group>"; };
 		AA7271B02C5F76BF007551C4 /* BirthDayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthDayVC.swift; sourceTree = "<group>"; };
 		AA7271B22C5F79AE007551C4 /* PhoneNumberVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberVC.swift; sourceTree = "<group>"; };
+		AA7271B42C5F9104007551C4 /* PasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +78,7 @@
 		AA7271862C5E5B2D007551C4 /* SeSACRxThreads_Start */ = {
 			isa = PBXGroup;
 			children = (
-				AA7271AF2C5F76A6007551C4 /* 생일가입 */,
+				AA7271AF2C5F76A6007551C4 /* 생일가입 전화번호 */,
 				AA7271AE2C5F5E3F007551C4 /* 버킷리스트 무한 연습 */,
 				AA7271AB2C5E851D007551C4 /* Resource */,
 				AA7271872C5E5B2D007551C4 /* AppDelegate.swift */,
@@ -110,13 +112,14 @@
 			path = "버킷리스트 무한 연습";
 			sourceTree = "<group>";
 		};
-		AA7271AF2C5F76A6007551C4 /* 생일가입 */ = {
+		AA7271AF2C5F76A6007551C4 /* 생일가입 전화번호 */ = {
 			isa = PBXGroup;
 			children = (
 				AA7271B02C5F76BF007551C4 /* BirthDayVC.swift */,
 				AA7271B22C5F79AE007551C4 /* PhoneNumberVC.swift */,
+				AA7271B42C5F9104007551C4 /* PasswordVC.swift */,
 			);
-			name = "생일가입";
+			name = "생일가입 전화번호";
 			path = "생일가입";
 			sourceTree = "<group>";
 		};
@@ -203,6 +206,7 @@
 				AA7271AD2C5F5E36007551C4 /* BucketListTableVC2.swift in Sources */,
 				AA72718C2C5E5B2D007551C4 /* ViewController.swift in Sources */,
 				AA72719C2C5E5B50007551C4 /* BucketListTableVC.swift in Sources */,
+				AA7271B52C5F9104007551C4 /* PasswordVC.swift in Sources */,
 				AA7271B12C5F76BF007551C4 /* BirthDayVC.swift in Sources */,
 				AA7271882C5E5B2D007551C4 /* AppDelegate.swift in Sources */,
 				AA7271A82C5E7FE9007551C4 /* BasicButtonViewController.swift in Sources */,
