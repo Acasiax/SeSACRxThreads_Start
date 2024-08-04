@@ -98,7 +98,7 @@
 		AA7271862C5E5B2D007551C4 /* SeSACRxThreads_Start */ = {
 			isa = PBXGroup;
 			children = (
-				AA7271AF2C5F76A6007551C4 /* 49회차 과제 생일가입 전화번호 패스워드 */,
+				AA7271CD2C5FD5E8007551C4 /* 49회차 과제 */,
 				AA7271B72C5F988D007551C4 /* 48회차 강의자료 뽀개기 */,
 				AA7271B62C5F9873007551C4 /* 47회차 강의자료뽀개기 */,
 				AA7271C62C5FCD54007551C4 /* 49회차 강의자료 뽀개기 */,
@@ -135,17 +135,6 @@
 			path = "버킷리스트 무한 연습";
 			sourceTree = "<group>";
 		};
-		AA7271AF2C5F76A6007551C4 /* 49회차 과제 생일가입 전화번호 패스워드 */ = {
-			isa = PBXGroup;
-			children = (
-				AA7271B02C5F76BF007551C4 /* BirthDayVC.swift */,
-				AA7271B22C5F79AE007551C4 /* PhoneNumberVC.swift */,
-				AA7271B42C5F9104007551C4 /* PasswordVC.swift */,
-			);
-			name = "49회차 과제 생일가입 전화번호 패스워드";
-			path = "생일가입";
-			sourceTree = "<group>";
-		};
 		AA7271B62C5F9873007551C4 /* 47회차 강의자료뽀개기 */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +167,17 @@
 			);
 			name = "49회차 강의자료 뽀개기";
 			path = "49회차 강의자료 뽀개기";
+			sourceTree = "<group>";
+		};
+		AA7271CD2C5FD5E8007551C4 /* 49회차 과제 */ = {
+			isa = PBXGroup;
+			children = (
+				AA7271B02C5F76BF007551C4 /* BirthDayVC.swift */,
+				AA7271B22C5F79AE007551C4 /* PhoneNumberVC.swift */,
+				AA7271B42C5F9104007551C4 /* PasswordVC.swift */,
+			);
+			name = "49회차 과제";
+			path = "49회차 과제";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
