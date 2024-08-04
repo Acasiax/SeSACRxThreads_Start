@@ -33,6 +33,7 @@
 		AA7271C52C5FCA2F007551C4 /* CombineLatestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271C42C5FCA2F007551C4 /* CombineLatestVC.swift */; };
 		AA7271C82C5FCD85007551C4 /* SearchVC49Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271C72C5FCD85007551C4 /* SearchVC49Example.swift */; };
 		AA7271CA2C5FD222007551C4 /* WithLatestFromVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271C92C5FD222007551C4 /* WithLatestFromVC.swift */; };
+		AA7271CC2C5FD395007551C4 /* ZipVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271CB2C5FD395007551C4 /* ZipVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		AA7271C42C5FCA2F007551C4 /* CombineLatestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineLatestVC.swift; sourceTree = "<group>"; };
 		AA7271C72C5FCD85007551C4 /* SearchVC49Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC49Example.swift; sourceTree = "<group>"; };
 		AA7271C92C5FD222007551C4 /* WithLatestFromVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithLatestFromVC.swift; sourceTree = "<group>"; };
+		AA7271CB2C5FD395007551C4 /* ZipVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 			children = (
 				AA7271C72C5FCD85007551C4 /* SearchVC49Example.swift */,
 				AA7271C92C5FD222007551C4 /* WithLatestFromVC.swift */,
+				AA7271CB2C5FD395007551C4 /* ZipVC.swift */,
 			);
 			name = "49회차 강의자료 뽀개기";
 			path = "49회차 강의자료 뽀개기";
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA7271C32C5FC905007551C4 /* PassWordVCExample.swift in Sources */,
+				AA7271CC2C5FD395007551C4 /* ZipVC.swift in Sources */,
 				AA7271C52C5FCA2F007551C4 /* CombineLatestVC.swift in Sources */,
 				AA7271BF2C5FADC3007551C4 /* TextFieldButtonVC.swift in Sources */,
 				AA7271BD2C5FAA0A007551C4 /* SwitchVC.swift in Sources */,
