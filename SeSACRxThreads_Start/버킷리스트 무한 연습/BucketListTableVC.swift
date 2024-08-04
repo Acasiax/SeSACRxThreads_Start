@@ -16,13 +16,14 @@ struct ShoppingItem {
     var isFavorite: Bool
 }
 
-class SimpleShoppingListViewController: BaseViewController, UITableViewDelegate {
+class BucketListTableVC1: UIViewController, UITableViewDelegate {
+    
     var tableView: UITableView!
     var searchBar: UISearchBar!
     
     let disposeBag = DisposeBag()
     
-    // 쇼핑 아이템 BehaviorRelay로 공부
+    // 쇼핑 아이템 BehaviorRelay
     let items = BehaviorRelay<[ShoppingItem]>(value: [
         ShoppingItem(title: "그림툭 구매하기", isChecked: true, isFavorite: true),
         ShoppingItem(title: "사이다 구매", isChecked: true, isFavorite: false),
@@ -38,7 +39,6 @@ class SimpleShoppingListViewController: BaseViewController, UITableViewDelegate 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-        
         bindTableViewData()
         handleTableViewSelection()
         bindSearchBar()
@@ -48,7 +48,7 @@ class SimpleShoppingListViewController: BaseViewController, UITableViewDelegate 
     // MARK: - 뷰 설정
     
     private func setupView() {
-        self.title = "쇼핑"
+      self.title = "쇼핑"
         view.backgroundColor = .white
         addSubviews()
         setupLayout()
@@ -56,21 +56,22 @@ class SimpleShoppingListViewController: BaseViewController, UITableViewDelegate 
     
     // MARK: - Add Subviews
     
-    override func addSubviews() {
+     func addSubviews() {
         searchBar = UISearchBar()
-        searchBar.placeholder = "검색어를 입력하세요"
-        view.addSubview(searchBar)
-        
         tableView = UITableView()
+         
+        searchBar.placeholder = "검색어를 입력하세요"
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+         
+        view.addSubview(searchBar)
         view.addSubview(tableView)
     }
     
     // MARK: - Setup Auto Layout
     
-    override func setupLayout() {
+     func setupLayout() {
         searchBar.snp.makeConstraints { make in
-            make.top.equalTo(view.safeAreaLayoutGuide)
+            make.top.equalTo(view.safeAreaLayoutGuide).offset(20)
             make.left.right.equalToSuperview()
         }
         
@@ -81,15 +82,16 @@ class SimpleShoppingListViewController: BaseViewController, UITableViewDelegate 
     }
     
     // MARK: - 데이터 바인딩
-    
+
     private func bindTableViewData() {
-        filteredItems.bind(to: tableView.rx.items(cellIdentifier: "Cell", cellType: UITableViewCell.self)) { [weak self] (row, item, cell) in
-            guard let self = self else { return }
-            cell.textLabel?.text = item.title
-            cell.accessoryView = self.createAccessoryView(isFavorite: item.isFavorite, index: row)
-        }
-        .disposed(by: disposeBag)
+        filteredItems
+            .bind(to: tableView.rx.items(cellIdentifier: "Cell", cellType: UITableViewCell.self)) { (row, item, cell) in
+                cell.textLabel?.text = item.title
+                cell.accessoryView = self.createAccessoryView(isFavorite: item.isFavorite, index: row)
+            }
+            .disposed(by: disposeBag)
     }
+
     
     // MARK: - 선택 처리
     
