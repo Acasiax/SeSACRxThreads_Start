@@ -25,6 +25,7 @@
 		AA7271B32C5F79AE007551C4 /* PhoneNumberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271B22C5F79AE007551C4 /* PhoneNumberVC.swift */; };
 		AA7271B52C5F9104007551C4 /* PasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271B42C5F9104007551C4 /* PasswordVC.swift */; };
 		AA7271B92C5F992D007551C4 /* PickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271B82C5F992D007551C4 /* PickerVC.swift */; };
+		AA7271BB2C5FA0DB007551C4 /* TableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271BA2C5FA0DB007551C4 /* TableViewVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		AA7271B22C5F79AE007551C4 /* PhoneNumberVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberVC.swift; sourceTree = "<group>"; };
 		AA7271B42C5F9104007551C4 /* PasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordVC.swift; sourceTree = "<group>"; };
 		AA7271B82C5F992D007551C4 /* PickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerVC.swift; sourceTree = "<group>"; };
+		AA7271BA2C5FA0DB007551C4 /* TableViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				AA7271B82C5F992D007551C4 /* PickerVC.swift */,
+				AA7271BA2C5FA0DB007551C4 /* TableViewVC.swift */,
 			);
 			name = "47회차 강의자료뽀개기";
 			path = "48회차 강의자료뽀개기";
@@ -233,6 +236,7 @@
 				AA7271882C5E5B2D007551C4 /* AppDelegate.swift in Sources */,
 				AA7271A82C5E7FE9007551C4 /* BasicButtonViewController.swift in Sources */,
 				AA72718A2C5E5B2D007551C4 /* SceneDelegate.swift in Sources */,
+				AA7271BB2C5FA0DB007551C4 /* TableViewVC.swift in Sources */,
 				AA7271AA2C5E84FA007551C4 /* BaseViewController.swift in Sources */,
 				AA7271B32C5F79AE007551C4 /* PhoneNumberVC.swift in Sources */,
 				AA7271A62C5E5C69007551C4 /* CustomSImpleTableVC.swift in Sources */,
