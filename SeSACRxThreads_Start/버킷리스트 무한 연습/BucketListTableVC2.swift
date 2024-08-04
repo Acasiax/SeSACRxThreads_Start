@@ -85,4 +85,28 @@ class BucketListTableVC2: UIViewController, UITableViewDelegate {
             }
             .disposed(by: disposeBag)
     }
+    
+    
+    func handleTableViewSelection() {
+        tableView.rx.itemSelected
+            .observe(on: MainScheduler.instance)
+            .subscribe(with: self, onNext: { owner, indexPath in
+                owner.toggleChecked(at: indexPath.row)
+            }, onDisposed: {owner in
+                print("ddd")
+            })
+            .disposed(by: DisposeBag())
+            
+    }
+    
+    func toggleChecked(at index: Int) {
+        var currentItems = items.value
+        currentItems[index].isFavorite.toggle()
+        //accept 메서드는 BehaviorRelay 또는 PublishRelay 같은 RxSwift의 Relay 타입에 새로운 값을 설정할 때 사용됩니다. accept 메서드를 호출하면 Relay의 현재 값이 업데이트되고, Relay가 구독된 모든 구독자에게 새 값이 방출됩니다.
+        items.accept(currentItems)
+        filteredItems.accept(currentItems)
+    }
+    
+    
+    
 }
