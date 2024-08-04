@@ -153,6 +153,7 @@ class BucketListTableVC2: UIViewController, UITableViewDelegate {
         filteredItems.accept(currentItems)
     }
     
+    //accept 메서드는 BehaviorRelay 또는 PublishRelay 같은 RxSwift의 Relay 타입에 새로운 값을 설정할 때 사용됩니다. accept 메서드를 호출하면 Relay의 현재 값이 업데이트되고, Relay가 구독된 모든 구독자에게 새 값이 방출됩니다.
     func toggleChecked(at index: Int) {
         var currentItems = items.value
         currentItems[index].isChecked.toggle()
