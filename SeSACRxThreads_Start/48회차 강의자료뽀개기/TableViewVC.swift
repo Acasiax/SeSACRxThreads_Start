@@ -24,6 +24,7 @@ class TableViewVC: UIViewController {
         
         view.addSubview(tableView)
         view.addSubview(simpleLabel)
+        
         simpleLabel.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(20)
@@ -40,7 +41,9 @@ class TableViewVC: UIViewController {
         // items Observable을 tableView에 바인딩
         items
             .bind(to: tableView.rx.items(cellIdentifier: "Cell")) { (row, item, cell) in
+                
                 cell.textLabel?.text = "\(item) @ row \(row)"
+               
             }
             .disposed(by: disposeBag)
         
