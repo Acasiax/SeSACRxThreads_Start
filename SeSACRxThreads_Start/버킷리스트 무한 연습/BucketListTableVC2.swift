@@ -17,13 +17,13 @@ struct BucketItem {
 }
 
 class BucketListTableVC2: UIViewController, UITableViewDelegate {
-    // 클래스의 속성을 선언
     var tableView: UITableView!
     var searchBar: UISearchBar!
+    var addItemTextField: UITextField!
+    var addItemButton: UIButton!
     
     let disposeBag = DisposeBag()
     
-    // 쇼핑 아이템 BehaviorRelay
     let items = BehaviorRelay<[BucketItem]>(value: [
         BucketItem(title: "낮잠자기", isChecked: false, isFavorite: false),
         BucketItem(title: "수영하기", isChecked: false, isFavorite: false),
@@ -32,17 +32,15 @@ class BucketListTableVC2: UIViewController, UITableViewDelegate {
         BucketItem(title: "이불세탁하기", isChecked: false, isFavorite: false)
     ])
     
-    // 필터링된 아이템
     let filteredItems = BehaviorRelay<[BucketItem]>(value: [])
 
-    // MARK: - 뷰 디드로드
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
         addSubviews()
         bindTableViewData()
+        bindAddItem()
         
-        // items를 filteredItems로 바인딩하여 초기 데이터를 설정
         items
             .bind(to: filteredItems)
             .disposed(by: disposeBag)
@@ -54,19 +52,37 @@ class BucketListTableVC2: UIViewController, UITableViewDelegate {
     }
     
     func addSubviews() {
-        // 테이블 뷰 생성 및 설정
         tableView = UITableView()
         searchBar = UISearchBar()
+        addItemTextField = UITextField()
+        addItemButton = UIButton(type: .system)
         
+        addItemTextField.placeholder = "무엇을 구매하실 건가요?"
+        addItemTextField.borderStyle = .roundedRect
+        
+        addItemButton.setTitle("추가", for: .normal)
+        
+        view.addSubview(addItemTextField)
+        view.addSubview(addItemButton)
         view.addSubview(searchBar)
         view.addSubview(tableView)
         
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         
-        tableView.backgroundColor = .orange.withAlphaComponent(0.5)
+        addItemTextField.snp.makeConstraints { make in
+            make.top.equalTo(view.safeAreaLayoutGuide).offset(20)
+            make.left.equalToSuperview().offset(16)
+            make.right.equalTo(addItemButton.snp.left).offset(-8)
+        }
+        
+        addItemButton.snp.makeConstraints { make in
+            make.centerY.equalTo(addItemTextField)
+            make.right.equalToSuperview().offset(-16)
+            make.width.equalTo(50)
+        }
         
         searchBar.snp.makeConstraints { make in
-            make.top.equalTo(view.safeAreaLayoutGuide).offset(20)
+            make.top.equalTo(addItemTextField.snp.bottom).offset(8)
             make.left.right.equalToSuperview()
         }
         
@@ -82,31 +98,64 @@ class BucketListTableVC2: UIViewController, UITableViewDelegate {
         filteredItems
             .bind(to: tableView.rx.items(cellIdentifier: "Cell", cellType: UITableViewCell.self)) { (row, item, cell) in
                 cell.textLabel?.text = item.title
+                cell.accessoryView = self.createAccessoryView(isFavorite: item.isFavorite, index: row)
             }
             .disposed(by: disposeBag)
     }
     
+    func bindAddItem() {
+        addItemButton.rx.tap
+            .withLatestFrom(addItemTextField.rx.text.orEmpty)
+            .filter { !$0.isEmpty }
+            .subscribe(with: self, onNext: { owner, text in
+                var currentItems = owner.items.value
+                let newItem = BucketItem(title: text, isChecked: false, isFavorite: false)
+                currentItems.append(newItem)
+                owner.items.accept(currentItems)
+                owner.addItemTextField.text = ""
+            })
+            .disposed(by: disposeBag)
+    }
     
     func handleTableViewSelection() {
         tableView.rx.itemSelected
             .observe(on: MainScheduler.instance)
             .subscribe(with: self, onNext: { owner, indexPath in
                 owner.toggleChecked(at: indexPath.row)
-            }, onDisposed: {owner in
-                print("ddd")
+            }, onDisposed: { owner in
+                print("disposed")
             })
-            .disposed(by: DisposeBag())
-            
+            .disposed(by: disposeBag)
     }
     
-    func toggleChecked(at index: Int) {
+    private func createAccessoryView(isFavorite: Bool, index: Int) -> UIView {
+        let button = UIButton(type: .system)
+        let image = isFavorite ? UIImage(systemName: "star.fill") : UIImage(systemName: "star")
+        button.setImage(image, for: .normal)
+        button.tag = index
+        
+        button.frame = CGRect(x: 0, y: 0, width: 24, height: 24)
+        
+        button.rx.tap
+            .bind(with: self) { owner, _ in
+                owner.toggleFavorite(at: index)
+            }
+            .disposed(by: disposeBag)
+        
+        return button
+    }
+    
+    private func toggleFavorite(at index: Int) {
         var currentItems = items.value
         currentItems[index].isFavorite.toggle()
-        //accept 메서드는 BehaviorRelay 또는 PublishRelay 같은 RxSwift의 Relay 타입에 새로운 값을 설정할 때 사용됩니다. accept 메서드를 호출하면 Relay의 현재 값이 업데이트되고, Relay가 구독된 모든 구독자에게 새 값이 방출됩니다.
         items.accept(currentItems)
         filteredItems.accept(currentItems)
     }
     
-    
-    
+    func toggleChecked(at index: Int) {
+        var currentItems = items.value
+        currentItems[index].isChecked.toggle()
+        items.accept(currentItems)
+        filteredItems.accept(currentItems)
+    }
 }
