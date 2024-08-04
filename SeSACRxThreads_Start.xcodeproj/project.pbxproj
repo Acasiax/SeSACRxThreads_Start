@@ -31,6 +31,8 @@
 		AA7271C12C5FBEFD007551C4 /* JustOfFromTakeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271C02C5FBEFD007551C4 /* JustOfFromTakeVC.swift */; };
 		AA7271C32C5FC905007551C4 /* PassWordVCExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271C22C5FC905007551C4 /* PassWordVCExample.swift */; };
 		AA7271C52C5FCA2F007551C4 /* CombineLatestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271C42C5FCA2F007551C4 /* CombineLatestVC.swift */; };
+		AA7271C82C5FCD85007551C4 /* SearchVC49Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271C72C5FCD85007551C4 /* SearchVC49Example.swift */; };
+		AA7271CA2C5FD222007551C4 /* WithLatestFromVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271C92C5FD222007551C4 /* WithLatestFromVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +59,8 @@
 		AA7271C02C5FBEFD007551C4 /* JustOfFromTakeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustOfFromTakeVC.swift; sourceTree = "<group>"; };
 		AA7271C22C5FC905007551C4 /* PassWordVCExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassWordVCExample.swift; sourceTree = "<group>"; };
 		AA7271C42C5FCA2F007551C4 /* CombineLatestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineLatestVC.swift; sourceTree = "<group>"; };
+		AA7271C72C5FCD85007551C4 /* SearchVC49Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC49Example.swift; sourceTree = "<group>"; };
+		AA7271C92C5FD222007551C4 /* WithLatestFromVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithLatestFromVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,9 +96,10 @@
 		AA7271862C5E5B2D007551C4 /* SeSACRxThreads_Start */ = {
 			isa = PBXGroup;
 			children = (
+				AA7271AF2C5F76A6007551C4 /* 49회차 과제 생일가입 전화번호 패스워드 */,
 				AA7271B72C5F988D007551C4 /* 48회차 강의자료 뽀개기 */,
 				AA7271B62C5F9873007551C4 /* 47회차 강의자료뽀개기 */,
-				AA7271AF2C5F76A6007551C4 /* 49회차 과제 생일가입 전화번호 패스워드 */,
+				AA7271C62C5FCD54007551C4 /* 49회차 강의자료 뽀개기 */,
 				AA7271AE2C5F5E3F007551C4 /* 버킷리스트 무한 연습 */,
 				AA7271AB2C5E851D007551C4 /* Resource */,
 				AA7271872C5E5B2D007551C4 /* AppDelegate.swift */,
@@ -160,6 +165,16 @@
 			);
 			name = "48회차 강의자료 뽀개기";
 			path = "48회차 강의자료 뽀개기";
+			sourceTree = "<group>";
+		};
+		AA7271C62C5FCD54007551C4 /* 49회차 강의자료 뽀개기 */ = {
+			isa = PBXGroup;
+			children = (
+				AA7271C72C5FCD85007551C4 /* SearchVC49Example.swift */,
+				AA7271C92C5FD222007551C4 /* WithLatestFromVC.swift */,
+			);
+			name = "49회차 강의자료 뽀개기";
+			path = "49회차 강의자료 뽀개기";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +263,7 @@
 				AA7271BD2C5FAA0A007551C4 /* SwitchVC.swift in Sources */,
 				AA7271B92C5F992D007551C4 /* PickerVC.swift in Sources */,
 				AA7271AD2C5F5E36007551C4 /* BucketListTableVC2.swift in Sources */,
+				AA7271C82C5FCD85007551C4 /* SearchVC49Example.swift in Sources */,
 				AA72718C2C5E5B2D007551C4 /* ViewController.swift in Sources */,
 				AA72719C2C5E5B50007551C4 /* BucketListTableVC.swift in Sources */,
 				AA7271B52C5F9104007551C4 /* PasswordVC.swift in Sources */,
@@ -256,6 +272,7 @@
 				AA7271A82C5E7FE9007551C4 /* BasicButtonViewController.swift in Sources */,
 				AA72718A2C5E5B2D007551C4 /* SceneDelegate.swift in Sources */,
 				AA7271BB2C5FA0DB007551C4 /* TableViewVC.swift in Sources */,
+				AA7271CA2C5FD222007551C4 /* WithLatestFromVC.swift in Sources */,
 				AA7271AA2C5E84FA007551C4 /* BaseViewController.swift in Sources */,
 				AA7271B32C5F79AE007551C4 /* PhoneNumberVC.swift in Sources */,
 				AA7271C12C5FBEFD007551C4 /* JustOfFromTakeVC.swift in Sources */,
