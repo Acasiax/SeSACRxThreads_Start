@@ -10,6 +10,9 @@ import SnapKit
 import RxSwift
 import RxCocoa
 
+//Zip은 만약 한 관찰자만 보고를 하고, 다른 관찰자가 보고하지 않는다면 Zip은 결과를 내놓지 않아.
+// 근데 CombineLatest
+
 class ZipViewController: UIViewController {
     
     let disposeBag = DisposeBag()
@@ -96,6 +99,8 @@ class ZipViewController: UIViewController {
         .disposed(by: disposeBag)
     }
     
+    
+    //MARK: -  Zip을 사용하여 멘토 이름과 나이를 동시에 출력함 Zip은 두 관찰자가 모두 보고할 때만 결과를 내놓는거 기억하기!!
     private func zipExample() {
         // Zip을 사용하여 멘토 이름과 나이를 동시에 출력하기
         Observable.zip(mentorObservable, ageObservable)
@@ -104,4 +109,21 @@ class ZipViewController: UIViewController {
             })
             .disposed(by: disposeBag)
     }
+    
+    
+   
+    //MARK: - Zip은 두 관찰자가 모두 보고할 때만 결과를 내놓는 반면, CombineLatest는 각 관찰자가 가장 최근에 보고한 값을 쌍으로 만들어 결과를 내놓는 거 기억하기!!
+    
+    private func combineLatestExample() {
+          // CombineLatest를 사용하여 멘토 이름과 나이를 동시에 출력함
+          // CombineLatest는 가장 최근의 값을 쌍으로 만들어 결과를 내놓음
+          Observable.combineLatest(mentorObservable, ageObservable)
+              .subscribe(onNext: { name, age in
+                  print("\(name), \(age)")
+              })
+              .disposed(by: disposeBag)
+      }
 }
+
+
+
