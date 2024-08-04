@@ -1,5 +1,5 @@
 //
-//  PasswordVC.swift
+//  PassWordVCExample.swift
 //  SeSACRxThreads_Start
 //
 //  Created by 이윤지 on 8/4/24.
@@ -10,7 +10,7 @@ import SnapKit
 import RxSwift
 import RxCocoa
 
-class PasswordVC: UIViewController {
+class PasswordViewController: UIViewController {
     let passwordTextField = SignTextField(placeholderText: "비밀번호를 입력해주세요")
     let nextButton = PointButton(title: "다음")
     let descriptionLabel = UILabel()
@@ -22,34 +22,25 @@ class PasswordVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .white
+        view.backgroundColor = Color.white
         
         configureLayout()
         bind()
     }
     
     func bind() {
-
         validText
             .bind(to: descriptionLabel.rx.text)
             .disposed(by: disposeBag)
         
-      
         let validation = passwordTextField
             .rx
             .text
             .orEmpty
             .map { $0.count >= 8 }
-            .share(replay: 1)
-        
-  
-        validation
-            .bind(to: nextButton.rx.isEnabled)
-            .disposed(by: disposeBag)
         
         validation
-            .map { !$0 }
-            .bind(to: descriptionLabel.rx.isHidden)
+            .bind(to: nextButton.rx.isEnabled, descriptionLabel.rx.isHidden)
             .disposed(by: disposeBag)
         
         validation
@@ -59,19 +50,15 @@ class PasswordVC: UIViewController {
             }
             .disposed(by: disposeBag)
         
-  
         nextButton
             .rx
             .tap
             .bind(with: self) { owner, _ in
-                let alert = UIAlertController(title: "알림", message: "다음 화면으로 이동합니다.", preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "확인", style: .default))
-                owner.present(alert, animated: true)
+                print("show alert")
             }
             .disposed(by: disposeBag)
     }
     
-   
     func configureLayout() {
         view.addSubview(passwordTextField)
         view.addSubview(nextButton)
@@ -96,3 +83,4 @@ class PasswordVC: UIViewController {
         }
     }
 }
+

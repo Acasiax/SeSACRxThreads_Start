@@ -29,6 +29,8 @@
 		AA7271BD2C5FAA0A007551C4 /* SwitchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271BC2C5FAA0A007551C4 /* SwitchVC.swift */; };
 		AA7271BF2C5FADC3007551C4 /* TextFieldButtonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271BE2C5FADC3007551C4 /* TextFieldButtonVC.swift */; };
 		AA7271C12C5FBEFD007551C4 /* JustOfFromTakeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271C02C5FBEFD007551C4 /* JustOfFromTakeVC.swift */; };
+		AA7271C32C5FC905007551C4 /* PassWordVCExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271C22C5FC905007551C4 /* PassWordVCExample.swift */; };
+		AA7271C52C5FCA2F007551C4 /* CombineLatestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271C42C5FCA2F007551C4 /* CombineLatestVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,8 @@
 		AA7271BC2C5FAA0A007551C4 /* SwitchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchVC.swift; sourceTree = "<group>"; };
 		AA7271BE2C5FADC3007551C4 /* TextFieldButtonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldButtonVC.swift; sourceTree = "<group>"; };
 		AA7271C02C5FBEFD007551C4 /* JustOfFromTakeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustOfFromTakeVC.swift; sourceTree = "<group>"; };
+		AA7271C22C5FC905007551C4 /* PassWordVCExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassWordVCExample.swift; sourceTree = "<group>"; };
+		AA7271C42C5FCA2F007551C4 /* CombineLatestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineLatestVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +94,7 @@
 			children = (
 				AA7271B72C5F988D007551C4 /* 48회차 강의자료 뽀개기 */,
 				AA7271B62C5F9873007551C4 /* 47회차 강의자료뽀개기 */,
-				AA7271AF2C5F76A6007551C4 /* 생일가입 전화번호 패스워드 */,
+				AA7271AF2C5F76A6007551C4 /* 49회차 과제 생일가입 전화번호 패스워드 */,
 				AA7271AE2C5F5E3F007551C4 /* 버킷리스트 무한 연습 */,
 				AA7271AB2C5E851D007551C4 /* Resource */,
 				AA7271872C5E5B2D007551C4 /* AppDelegate.swift */,
@@ -124,14 +128,14 @@
 			path = "버킷리스트 무한 연습";
 			sourceTree = "<group>";
 		};
-		AA7271AF2C5F76A6007551C4 /* 생일가입 전화번호 패스워드 */ = {
+		AA7271AF2C5F76A6007551C4 /* 49회차 과제 생일가입 전화번호 패스워드 */ = {
 			isa = PBXGroup;
 			children = (
 				AA7271B02C5F76BF007551C4 /* BirthDayVC.swift */,
 				AA7271B22C5F79AE007551C4 /* PhoneNumberVC.swift */,
 				AA7271B42C5F9104007551C4 /* PasswordVC.swift */,
 			);
-			name = "생일가입 전화번호 패스워드";
+			name = "49회차 과제 생일가입 전화번호 패스워드";
 			path = "생일가입";
 			sourceTree = "<group>";
 		};
@@ -151,6 +155,8 @@
 		AA7271B72C5F988D007551C4 /* 48회차 강의자료 뽀개기 */ = {
 			isa = PBXGroup;
 			children = (
+				AA7271C42C5FCA2F007551C4 /* CombineLatestVC.swift */,
+				AA7271C22C5FC905007551C4 /* PassWordVCExample.swift */,
 			);
 			name = "48회차 강의자료 뽀개기";
 			path = "48회차 강의자료 뽀개기";
@@ -236,6 +242,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA7271C32C5FC905007551C4 /* PassWordVCExample.swift in Sources */,
+				AA7271C52C5FCA2F007551C4 /* CombineLatestVC.swift in Sources */,
 				AA7271BF2C5FADC3007551C4 /* TextFieldButtonVC.swift in Sources */,
 				AA7271BD2C5FAA0A007551C4 /* SwitchVC.swift in Sources */,
 				AA7271B92C5F992D007551C4 /* PickerVC.swift in Sources */,
