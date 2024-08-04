@@ -22,6 +22,7 @@
 		AA7271AA2C5E84FA007551C4 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271A92C5E84FA007551C4 /* BaseViewController.swift */; };
 		AA7271AD2C5F5E36007551C4 /* BucketListTableVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271AC2C5F5E36007551C4 /* BucketListTableVC2.swift */; };
 		AA7271B12C5F76BF007551C4 /* BirthDayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271B02C5F76BF007551C4 /* BirthDayVC.swift */; };
+		AA7271B32C5F79AE007551C4 /* PhoneNumberVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271B22C5F79AE007551C4 /* PhoneNumberVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		AA7271A92C5E84FA007551C4 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		AA7271AC2C5F5E36007551C4 /* BucketListTableVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListTableVC2.swift; sourceTree = "<group>"; };
 		AA7271B02C5F76BF007551C4 /* BirthDayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthDayVC.swift; sourceTree = "<group>"; };
+		AA7271B22C5F79AE007551C4 /* PhoneNumberVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				AA7271B02C5F76BF007551C4 /* BirthDayVC.swift */,
+				AA7271B22C5F79AE007551C4 /* PhoneNumberVC.swift */,
 			);
 			name = "생일가입";
 			path = "생일가입";
@@ -205,6 +208,7 @@
 				AA7271A82C5E7FE9007551C4 /* BasicButtonViewController.swift in Sources */,
 				AA72718A2C5E5B2D007551C4 /* SceneDelegate.swift in Sources */,
 				AA7271AA2C5E84FA007551C4 /* BaseViewController.swift in Sources */,
+				AA7271B32C5F79AE007551C4 /* PhoneNumberVC.swift in Sources */,
 				AA7271A62C5E5C69007551C4 /* CustomSImpleTableVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
