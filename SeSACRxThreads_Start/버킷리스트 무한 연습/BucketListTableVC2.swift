@@ -40,6 +40,7 @@ class BucketListTableVC2: UIViewController, UITableViewDelegate {
         addSubviews()
         bindTableViewData()
         bindAddItem()
+        bindSearchBar()
         
         items
             .bind(to: filteredItems)
@@ -157,5 +158,28 @@ class BucketListTableVC2: UIViewController, UITableViewDelegate {
         currentItems[index].isChecked.toggle()
         items.accept(currentItems)
         filteredItems.accept(currentItems)
+    }
+    
+    // MARK: - 검색 바인딩
+    
+    private func bindSearchBar() {
+        searchBar.rx.text.orEmpty
+            .distinctUntilChanged()
+            .subscribe(with: self, onNext: { owner, query in
+                owner.filterItems(with: query)
+            })
+            .disposed(by: disposeBag)
+    }
+    
+    // MARK: - 아이템 필터링
+    
+    private func filterItems(with query: String) {
+        let allItems = items.value
+        if query.isEmpty {
+            filteredItems.accept(allItems)
+        } else {
+            let filtered = allItems.filter { $0.title.contains(query) }
+            filteredItems.accept(filtered)
+        }
     }
 }
