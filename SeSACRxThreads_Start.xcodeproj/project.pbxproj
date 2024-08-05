@@ -34,6 +34,8 @@
 		AA7271C82C5FCD85007551C4 /* SearchVC49Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271C72C5FCD85007551C4 /* SearchVC49Example.swift */; };
 		AA7271CA2C5FD222007551C4 /* WithLatestFromVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271C92C5FD222007551C4 /* WithLatestFromVC.swift */; };
 		AA7271CC2C5FD395007551C4 /* ZipVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271CB2C5FD395007551C4 /* ZipVC.swift */; };
+		AA7271D62C610867007551C4 /* BirthDayMvvmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271D52C610867007551C4 /* BirthDayMvvmVC.swift */; };
+		AA7271D82C6109DE007551C4 /* BirthdayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271D72C6109DE007551C4 /* BirthdayViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +65,8 @@
 		AA7271C72C5FCD85007551C4 /* SearchVC49Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC49Example.swift; sourceTree = "<group>"; };
 		AA7271C92C5FD222007551C4 /* WithLatestFromVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithLatestFromVC.swift; sourceTree = "<group>"; };
 		AA7271CB2C5FD395007551C4 /* ZipVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipVC.swift; sourceTree = "<group>"; };
+		AA7271D52C610867007551C4 /* BirthDayMvvmVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthDayMvvmVC.swift; sourceTree = "<group>"; };
+		AA7271D72C6109DE007551C4 /* BirthdayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,7 @@
 		AA7271862C5E5B2D007551C4 /* SeSACRxThreads_Start */ = {
 			isa = PBXGroup;
 			children = (
+				AA7271D42C6107ED007551C4 /* 50회차 과제 */,
 				AA7271CD2C5FD5E8007551C4 /* 49회차 과제 */,
 				AA7271B72C5F988D007551C4 /* 48회차 강의자료 뽀개기 */,
 				AA7271B62C5F9873007551C4 /* 47회차 강의자료뽀개기 */,
@@ -178,6 +183,16 @@
 			);
 			name = "49회차 과제";
 			path = "49회차 과제";
+			sourceTree = "<group>";
+		};
+		AA7271D42C6107ED007551C4 /* 50회차 과제 */ = {
+			isa = PBXGroup;
+			children = (
+				AA7271D52C610867007551C4 /* BirthDayMvvmVC.swift */,
+				AA7271D72C6109DE007551C4 /* BirthdayViewModel.swift */,
+			);
+			name = "50회차 과제";
+			path = "50회 과제";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,9 +278,11 @@
 				AA7271C32C5FC905007551C4 /* PassWordVCExample.swift in Sources */,
 				AA7271CC2C5FD395007551C4 /* ZipVC.swift in Sources */,
 				AA7271C52C5FCA2F007551C4 /* CombineLatestVC.swift in Sources */,
+				AA7271D62C610867007551C4 /* BirthDayMvvmVC.swift in Sources */,
 				AA7271BF2C5FADC3007551C4 /* TextFieldButtonVC.swift in Sources */,
 				AA7271BD2C5FAA0A007551C4 /* SwitchVC.swift in Sources */,
 				AA7271B92C5F992D007551C4 /* PickerVC.swift in Sources */,
+				AA7271D82C6109DE007551C4 /* BirthdayViewModel.swift in Sources */,
 				AA7271AD2C5F5E36007551C4 /* BucketListTableVC2.swift in Sources */,
 				AA7271C82C5FCD85007551C4 /* SearchVC49Example.swift in Sources */,
 				AA72718C2C5E5B2D007551C4 /* ViewController.swift in Sources */,
