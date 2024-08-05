@@ -1,8 +1,8 @@
 //
-//  PhoneMvvmVC.swift
+//  Phone3VC.swift
 //  SeSACRxThreads_Start
 //
-//  Created by 이윤지 on 8/5/24.
+//  Created by 이윤지 on 8/6/24.
 //
 
 import UIKit
@@ -10,8 +10,7 @@ import SnapKit
 import RxSwift
 import RxCocoa
 
-
-class PhoneMvvmVC: UIViewController {
+class Phone3MvvmVC: UIViewController {
     
     let phoneTextField = SignTextField(placeholderText: "연락처를 입력해주세요")
     let warningLabel: UILabel = {
@@ -29,7 +28,7 @@ class PhoneMvvmVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = Color.white
+        view.backgroundColor = .white
         
         configureLayout()
         setupInitialText()
@@ -52,8 +51,10 @@ class PhoneMvvmVC: UIViewController {
             .bind(to: nextButton.rx.isEnabled)
             .disposed(by: disposeBag)
         
-        output.buttonColor
-            .bind(to: nextButton.rx.backgroundColor)
+        output.isValid
+            .subscribe(onNext: { [weak self] isValid in
+                self?.nextButton.backgroundColor = isValid ? UIColor.blue : UIColor.lightGray
+            })
             .disposed(by: disposeBag)
         
         output.warningHidden
@@ -69,8 +70,8 @@ class PhoneMvvmVC: UIViewController {
             .disposed(by: disposeBag)
         
         nextButton.rx.tap
-            .bind { _ in
-                self.navigationController?.pushViewController(NicknameViewController(), animated: true)
+            .bind { [weak self] _ in
+                self?.navigationController?.pushViewController(NicknameViewController(), animated: true)
             }
             .disposed(by: disposeBag)
     }
@@ -104,6 +105,4 @@ class PhoneMvvmVC: UIViewController {
         }
     }
 }
-
-
 

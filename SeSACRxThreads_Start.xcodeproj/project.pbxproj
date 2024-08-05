@@ -42,6 +42,8 @@
 		AA7271E02C610B85007551C4 /* PasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271DF2C610B85007551C4 /* PasswordViewModel.swift */; };
 		AA7271E32C610CE3007551C4 /* Password3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271E22C610CE3007551C4 /* Password3VC.swift */; };
 		AA7271E52C610DCC007551C4 /* Password3ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271E42C610DCC007551C4 /* Password3ViewModel.swift */; };
+		AA7271E72C612909007551C4 /* Phone3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271E62C612909007551C4 /* Phone3VC.swift */; };
+		AA7271E92C612923007551C4 /* Phone3ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271E82C612923007551C4 /* Phone3ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +81,8 @@
 		AA7271DF2C610B85007551C4 /* PasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewModel.swift; sourceTree = "<group>"; };
 		AA7271E22C610CE3007551C4 /* Password3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Password3VC.swift; sourceTree = "<group>"; };
 		AA7271E42C610DCC007551C4 /* Password3ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Password3ViewModel.swift; sourceTree = "<group>"; };
+		AA7271E62C612909007551C4 /* Phone3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phone3VC.swift; sourceTree = "<group>"; };
+		AA7271E82C612923007551C4 /* Phone3ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phone3ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +221,8 @@
 			children = (
 				AA7271E22C610CE3007551C4 /* Password3VC.swift */,
 				AA7271E42C610DCC007551C4 /* Password3ViewModel.swift */,
+				AA7271E62C612909007551C4 /* Phone3VC.swift */,
+				AA7271E82C612923007551C4 /* Phone3ViewModel.swift */,
 			);
 			name = "50회차 과제 3번씩 리팩하기";
 			path = "50회차 과제 3번씩 리팩하기";
@@ -304,6 +310,7 @@
 			files = (
 				AA7271C32C5FC905007551C4 /* PassWordVCExample.swift in Sources */,
 				AA7271CC2C5FD395007551C4 /* ZipVC.swift in Sources */,
+				AA7271E92C612923007551C4 /* Phone3ViewModel.swift in Sources */,
 				AA7271C52C5FCA2F007551C4 /* CombineLatestVC.swift in Sources */,
 				AA7271E52C610DCC007551C4 /* Password3ViewModel.swift in Sources */,
 				AA7271D62C610867007551C4 /* BirthDayMvvmVC.swift in Sources */,
@@ -327,6 +334,7 @@
 				AA7271BB2C5FA0DB007551C4 /* TableViewVC.swift in Sources */,
 				AA7271CA2C5FD222007551C4 /* WithLatestFromVC.swift in Sources */,
 				AA7271AA2C5E84FA007551C4 /* BaseViewController.swift in Sources */,
+				AA7271E72C612909007551C4 /* Phone3VC.swift in Sources */,
 				AA7271B32C5F79AE007551C4 /* PhoneNumberVC.swift in Sources */,
 				AA7271C12C5FBEFD007551C4 /* JustOfFromTakeVC.swift in Sources */,
 				AA7271A62C5E5C69007551C4 /* CustomSImpleTableVC.swift in Sources */,
