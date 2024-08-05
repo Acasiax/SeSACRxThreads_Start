@@ -36,6 +36,12 @@
 		AA7271CC2C5FD395007551C4 /* ZipVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271CB2C5FD395007551C4 /* ZipVC.swift */; };
 		AA7271D62C610867007551C4 /* BirthDayMvvmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271D52C610867007551C4 /* BirthDayMvvmVC.swift */; };
 		AA7271D82C6109DE007551C4 /* BirthdayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271D72C6109DE007551C4 /* BirthdayViewModel.swift */; };
+		AA7271DA2C610A83007551C4 /* PhoneMvvmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271D92C610A83007551C4 /* PhoneMvvmVC.swift */; };
+		AA7271DC2C610AD6007551C4 /* PhoneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271DB2C610AD6007551C4 /* PhoneViewModel.swift */; };
+		AA7271DE2C610B63007551C4 /* PasswordMvvmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271DD2C610B63007551C4 /* PasswordMvvmVC.swift */; };
+		AA7271E02C610B85007551C4 /* PasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271DF2C610B85007551C4 /* PasswordViewModel.swift */; };
+		AA7271E32C610CE3007551C4 /* Password3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271E22C610CE3007551C4 /* Password3VC.swift */; };
+		AA7271E52C610DCC007551C4 /* Password3ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271E42C610DCC007551C4 /* Password3ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +73,12 @@
 		AA7271CB2C5FD395007551C4 /* ZipVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZipVC.swift; sourceTree = "<group>"; };
 		AA7271D52C610867007551C4 /* BirthDayMvvmVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthDayMvvmVC.swift; sourceTree = "<group>"; };
 		AA7271D72C6109DE007551C4 /* BirthdayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayViewModel.swift; sourceTree = "<group>"; };
+		AA7271D92C610A83007551C4 /* PhoneMvvmVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneMvvmVC.swift; sourceTree = "<group>"; };
+		AA7271DB2C610AD6007551C4 /* PhoneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneViewModel.swift; sourceTree = "<group>"; };
+		AA7271DD2C610B63007551C4 /* PasswordMvvmVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordMvvmVC.swift; sourceTree = "<group>"; };
+		AA7271DF2C610B85007551C4 /* PasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewModel.swift; sourceTree = "<group>"; };
+		AA7271E22C610CE3007551C4 /* Password3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Password3VC.swift; sourceTree = "<group>"; };
+		AA7271E42C610DCC007551C4 /* Password3ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Password3ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +114,8 @@
 		AA7271862C5E5B2D007551C4 /* SeSACRxThreads_Start */ = {
 			isa = PBXGroup;
 			children = (
-				AA7271D42C6107ED007551C4 /* 50회차 과제 */,
+				AA7271E12C610C8D007551C4 /* 50회차 과제 3번씩 리팩하기 */,
+				AA7271D42C6107ED007551C4 /* 50회차 과제 MVVM */,
 				AA7271CD2C5FD5E8007551C4 /* 49회차 과제 */,
 				AA7271B72C5F988D007551C4 /* 48회차 강의자료 뽀개기 */,
 				AA7271B62C5F9873007551C4 /* 47회차 강의자료뽀개기 */,
@@ -185,14 +198,28 @@
 			path = "49회차 과제";
 			sourceTree = "<group>";
 		};
-		AA7271D42C6107ED007551C4 /* 50회차 과제 */ = {
+		AA7271D42C6107ED007551C4 /* 50회차 과제 MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				AA7271D92C610A83007551C4 /* PhoneMvvmVC.swift */,
+				AA7271DB2C610AD6007551C4 /* PhoneViewModel.swift */,
 				AA7271D52C610867007551C4 /* BirthDayMvvmVC.swift */,
 				AA7271D72C6109DE007551C4 /* BirthdayViewModel.swift */,
+				AA7271DD2C610B63007551C4 /* PasswordMvvmVC.swift */,
+				AA7271DF2C610B85007551C4 /* PasswordViewModel.swift */,
 			);
-			name = "50회차 과제";
+			name = "50회차 과제 MVVM";
 			path = "50회 과제";
+			sourceTree = "<group>";
+		};
+		AA7271E12C610C8D007551C4 /* 50회차 과제 3번씩 리팩하기 */ = {
+			isa = PBXGroup;
+			children = (
+				AA7271E22C610CE3007551C4 /* Password3VC.swift */,
+				AA7271E42C610DCC007551C4 /* Password3ViewModel.swift */,
+			);
+			name = "50회차 과제 3번씩 리팩하기";
+			path = "50회차 과제 3번씩 리팩하기";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,19 +305,24 @@
 				AA7271C32C5FC905007551C4 /* PassWordVCExample.swift in Sources */,
 				AA7271CC2C5FD395007551C4 /* ZipVC.swift in Sources */,
 				AA7271C52C5FCA2F007551C4 /* CombineLatestVC.swift in Sources */,
+				AA7271E52C610DCC007551C4 /* Password3ViewModel.swift in Sources */,
 				AA7271D62C610867007551C4 /* BirthDayMvvmVC.swift in Sources */,
 				AA7271BF2C5FADC3007551C4 /* TextFieldButtonVC.swift in Sources */,
+				AA7271DA2C610A83007551C4 /* PhoneMvvmVC.swift in Sources */,
 				AA7271BD2C5FAA0A007551C4 /* SwitchVC.swift in Sources */,
 				AA7271B92C5F992D007551C4 /* PickerVC.swift in Sources */,
 				AA7271D82C6109DE007551C4 /* BirthdayViewModel.swift in Sources */,
 				AA7271AD2C5F5E36007551C4 /* BucketListTableVC2.swift in Sources */,
 				AA7271C82C5FCD85007551C4 /* SearchVC49Example.swift in Sources */,
+				AA7271DE2C610B63007551C4 /* PasswordMvvmVC.swift in Sources */,
 				AA72718C2C5E5B2D007551C4 /* ViewController.swift in Sources */,
+				AA7271DC2C610AD6007551C4 /* PhoneViewModel.swift in Sources */,
 				AA72719C2C5E5B50007551C4 /* BucketListTableVC.swift in Sources */,
 				AA7271B52C5F9104007551C4 /* PasswordVC.swift in Sources */,
 				AA7271B12C5F76BF007551C4 /* BirthDayVC.swift in Sources */,
 				AA7271882C5E5B2D007551C4 /* AppDelegate.swift in Sources */,
 				AA7271A82C5E7FE9007551C4 /* BasicButtonViewController.swift in Sources */,
+				AA7271E02C610B85007551C4 /* PasswordViewModel.swift in Sources */,
 				AA72718A2C5E5B2D007551C4 /* SceneDelegate.swift in Sources */,
 				AA7271BB2C5FA0DB007551C4 /* TableViewVC.swift in Sources */,
 				AA7271CA2C5FD222007551C4 /* WithLatestFromVC.swift in Sources */,
@@ -298,6 +330,7 @@
 				AA7271B32C5F79AE007551C4 /* PhoneNumberVC.swift in Sources */,
 				AA7271C12C5FBEFD007551C4 /* JustOfFromTakeVC.swift in Sources */,
 				AA7271A62C5E5C69007551C4 /* CustomSImpleTableVC.swift in Sources */,
+				AA7271E32C610CE3007551C4 /* Password3VC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
