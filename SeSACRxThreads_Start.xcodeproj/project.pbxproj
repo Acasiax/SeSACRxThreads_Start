@@ -48,6 +48,10 @@
 		AA7272062C6393B3007551C4 /* CafeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7272052C6393B3007551C4 /* CafeViewModel.swift */; };
 		AA7272082C6393ED007551C4 /* CafeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7272072C6393ED007551C4 /* CafeCollectionViewCell.swift */; };
 		AA72720A2C6393F5007551C4 /* CafeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7272092C6393F5007551C4 /* CafeTableViewCell.swift */; };
+		AA7272132C6399CA007551C4 /* Bucket3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7272122C6399CA007551C4 /* Bucket3ViewController.swift */; };
+		AA7272152C639BC6007551C4 /* Bucket3ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7272142C639BC6007551C4 /* Bucket3ViewModel.swift */; };
+		AA7272172C639BD7007551C4 /* Bucket3TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7272162C639BD7007551C4 /* Bucket3TableViewCell.swift */; };
+		AA7272192C639BE7007551C4 /* Buket3CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7272182C639BE7007551C4 /* Buket3CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +95,10 @@
 		AA7272052C6393B3007551C4 /* CafeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeViewModel.swift; sourceTree = "<group>"; };
 		AA7272072C6393ED007551C4 /* CafeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CafeCollectionViewCell.swift; sourceTree = "<group>"; };
 		AA7272092C6393F5007551C4 /* CafeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CafeTableViewCell.swift; sourceTree = "<group>"; };
+		AA7272122C6399CA007551C4 /* Bucket3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bucket3ViewController.swift; sourceTree = "<group>"; };
+		AA7272142C639BC6007551C4 /* Bucket3ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bucket3ViewModel.swift; sourceTree = "<group>"; };
+		AA7272162C639BD7007551C4 /* Bucket3TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bucket3TableViewCell.swift; sourceTree = "<group>"; };
+		AA7272182C639BE7007551C4 /* Buket3CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buket3CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +134,7 @@
 		AA7271862C5E5B2D007551C4 /* SeSACRxThreads_Start */ = {
 			isa = PBXGroup;
 			children = (
+				AA72720B2C639614007551C4 /* 52회차 과제 */,
 				AA7272022C63937F007551C4 /* 52회차 수업 코드 복습 리팩 */,
 				AA7271E12C610C8D007551C4 /* 50회차 과제 3번씩 리팩하기 */,
 				AA7271D42C6107ED007551C4 /* 50회차 과제 MVVM */,
@@ -249,6 +258,18 @@
 			path = "52회차 수업 ";
 			sourceTree = "<group>";
 		};
+		AA72720B2C639614007551C4 /* 52회차 과제 */ = {
+			isa = PBXGroup;
+			children = (
+				AA7272122C6399CA007551C4 /* Bucket3ViewController.swift */,
+				AA7272142C639BC6007551C4 /* Bucket3ViewModel.swift */,
+				AA7272162C639BD7007551C4 /* Bucket3TableViewCell.swift */,
+				AA7272182C639BE7007551C4 /* Buket3CollectionViewCell.swift */,
+			);
+			name = "52회차 과제";
+			path = "52회차 과제";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -345,6 +366,7 @@
 				AA7271AD2C5F5E36007551C4 /* BucketListTableVC2.swift in Sources */,
 				AA7271C82C5FCD85007551C4 /* SearchVC49Example.swift in Sources */,
 				AA7271DE2C610B63007551C4 /* PasswordMvvmVC.swift in Sources */,
+				AA7272132C6399CA007551C4 /* Bucket3ViewController.swift in Sources */,
 				AA72718C2C5E5B2D007551C4 /* ViewController.swift in Sources */,
 				AA7272082C6393ED007551C4 /* CafeCollectionViewCell.swift in Sources */,
 				AA7271DC2C610AD6007551C4 /* PhoneViewModel.swift in Sources */,
@@ -354,8 +376,11 @@
 				AA7271882C5E5B2D007551C4 /* AppDelegate.swift in Sources */,
 				AA7271A82C5E7FE9007551C4 /* BasicButtonViewController.swift in Sources */,
 				AA7271E02C610B85007551C4 /* PasswordViewModel.swift in Sources */,
+				AA7272152C639BC6007551C4 /* Bucket3ViewModel.swift in Sources */,
 				AA72718A2C5E5B2D007551C4 /* SceneDelegate.swift in Sources */,
 				AA7271BB2C5FA0DB007551C4 /* TableViewVC.swift in Sources */,
+				AA7272192C639BE7007551C4 /* Buket3CollectionViewCell.swift in Sources */,
+				AA7272172C639BD7007551C4 /* Bucket3TableViewCell.swift in Sources */,
 				AA7271CA2C5FD222007551C4 /* WithLatestFromVC.swift in Sources */,
 				AA7271AA2C5E84FA007551C4 /* BaseViewController.swift in Sources */,
 				AA7271E72C612909007551C4 /* Phone3VC.swift in Sources */,
