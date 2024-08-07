@@ -44,6 +44,10 @@
 		AA7271E52C610DCC007551C4 /* Password3ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271E42C610DCC007551C4 /* Password3ViewModel.swift */; };
 		AA7271E72C612909007551C4 /* Phone3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271E62C612909007551C4 /* Phone3VC.swift */; };
 		AA7271E92C612923007551C4 /* Phone3ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7271E82C612923007551C4 /* Phone3ViewModel.swift */; };
+		AA7272042C6393A2007551C4 /* CafeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7272032C6393A2007551C4 /* CafeViewController.swift */; };
+		AA7272062C6393B3007551C4 /* CafeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7272052C6393B3007551C4 /* CafeViewModel.swift */; };
+		AA7272082C6393ED007551C4 /* CafeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7272072C6393ED007551C4 /* CafeCollectionViewCell.swift */; };
+		AA72720A2C6393F5007551C4 /* CafeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7272092C6393F5007551C4 /* CafeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +87,10 @@
 		AA7271E42C610DCC007551C4 /* Password3ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Password3ViewModel.swift; sourceTree = "<group>"; };
 		AA7271E62C612909007551C4 /* Phone3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phone3VC.swift; sourceTree = "<group>"; };
 		AA7271E82C612923007551C4 /* Phone3ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phone3ViewModel.swift; sourceTree = "<group>"; };
+		AA7272032C6393A2007551C4 /* CafeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeViewController.swift; sourceTree = "<group>"; };
+		AA7272052C6393B3007551C4 /* CafeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeViewModel.swift; sourceTree = "<group>"; };
+		AA7272072C6393ED007551C4 /* CafeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CafeCollectionViewCell.swift; sourceTree = "<group>"; };
+		AA7272092C6393F5007551C4 /* CafeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CafeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +126,7 @@
 		AA7271862C5E5B2D007551C4 /* SeSACRxThreads_Start */ = {
 			isa = PBXGroup;
 			children = (
+				AA7272022C63937F007551C4 /* 52회차 수업 코드 복습 리팩 */,
 				AA7271E12C610C8D007551C4 /* 50회차 과제 3번씩 리팩하기 */,
 				AA7271D42C6107ED007551C4 /* 50회차 과제 MVVM */,
 				AA7271CD2C5FD5E8007551C4 /* 49회차 과제 */,
@@ -228,6 +237,18 @@
 			path = "50회차 과제 3번씩 리팩하기";
 			sourceTree = "<group>";
 		};
+		AA7272022C63937F007551C4 /* 52회차 수업 코드 복습 리팩 */ = {
+			isa = PBXGroup;
+			children = (
+				AA7272032C6393A2007551C4 /* CafeViewController.swift */,
+				AA7272052C6393B3007551C4 /* CafeViewModel.swift */,
+				AA7272072C6393ED007551C4 /* CafeCollectionViewCell.swift */,
+				AA7272092C6393F5007551C4 /* CafeTableViewCell.swift */,
+			);
+			name = "52회차 수업 코드 복습 리팩";
+			path = "52회차 수업 ";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -309,9 +330,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA7271C32C5FC905007551C4 /* PassWordVCExample.swift in Sources */,
+				AA7272042C6393A2007551C4 /* CafeViewController.swift in Sources */,
 				AA7271CC2C5FD395007551C4 /* ZipVC.swift in Sources */,
 				AA7271E92C612923007551C4 /* Phone3ViewModel.swift in Sources */,
 				AA7271C52C5FCA2F007551C4 /* CombineLatestVC.swift in Sources */,
+				AA7272062C6393B3007551C4 /* CafeViewModel.swift in Sources */,
 				AA7271E52C610DCC007551C4 /* Password3ViewModel.swift in Sources */,
 				AA7271D62C610867007551C4 /* BirthDayMvvmVC.swift in Sources */,
 				AA7271BF2C5FADC3007551C4 /* TextFieldButtonVC.swift in Sources */,
@@ -323,6 +346,7 @@
 				AA7271C82C5FCD85007551C4 /* SearchVC49Example.swift in Sources */,
 				AA7271DE2C610B63007551C4 /* PasswordMvvmVC.swift in Sources */,
 				AA72718C2C5E5B2D007551C4 /* ViewController.swift in Sources */,
+				AA7272082C6393ED007551C4 /* CafeCollectionViewCell.swift in Sources */,
 				AA7271DC2C610AD6007551C4 /* PhoneViewModel.swift in Sources */,
 				AA72719C2C5E5B50007551C4 /* BucketListTableVC.swift in Sources */,
 				AA7271B52C5F9104007551C4 /* PasswordVC.swift in Sources */,
@@ -335,6 +359,7 @@
 				AA7271CA2C5FD222007551C4 /* WithLatestFromVC.swift in Sources */,
 				AA7271AA2C5E84FA007551C4 /* BaseViewController.swift in Sources */,
 				AA7271E72C612909007551C4 /* Phone3VC.swift in Sources */,
+				AA72720A2C6393F5007551C4 /* CafeTableViewCell.swift in Sources */,
 				AA7271B32C5F79AE007551C4 /* PhoneNumberVC.swift in Sources */,
 				AA7271C12C5FBEFD007551C4 /* JustOfFromTakeVC.swift in Sources */,
 				AA7271A62C5E5C69007551C4 /* CustomSImpleTableVC.swift in Sources */,
