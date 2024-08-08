@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 
 final class Bucket3TableViewCell: UITableViewCell {
-    static let identifier = "Bucket3TableViewCell"
+  //  static let identifier = "Bucket3TableViewCell"
     
     let titleLabel: UILabel = {
         let label = UILabel()

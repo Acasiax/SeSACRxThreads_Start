@@ -10,7 +10,7 @@ import SnapKit
 
 final class Buket3CollectionViewCell: UICollectionViewCell {
     
-    static let identifier = "Buket3CollectionViewCell"
+   // static let identifier = "Buket3CollectionViewCell"
     let label = UILabel()
     
     override init(frame: CGRect) {

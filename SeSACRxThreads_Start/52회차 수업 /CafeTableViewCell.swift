@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 
 class CafeTableViewCell: UITableViewCell {
-    static let identifier = "CafeTableViewCell"
+  //  static let identifier = "CafeTableViewCell"
     
     let menuNameLabel: UILabel = {
         let label = UILabel()

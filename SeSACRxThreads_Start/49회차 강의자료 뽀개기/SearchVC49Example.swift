@@ -88,7 +88,7 @@ class SearchViewController: UIViewController {
 }
 
 final class SearchTableViewCell: UITableViewCell {
-    static let identifier = "SearchTableViewCell"
+  //  static let identifier = "SearchTableViewCell"
     
     let appNameLabel: UILabel = {
         let label = UILabel()

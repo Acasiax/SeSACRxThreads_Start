@@ -10,7 +10,7 @@ import SnapKit
 
 class CafeCollectionViewCell: UICollectionViewCell {
     
-    static let identifier = "CafeCollectionViewCell"
+  //  static let identifier = "CafeCollectionViewCell"
     let label = UILabel()
     
     override init(frame: CGRect) {

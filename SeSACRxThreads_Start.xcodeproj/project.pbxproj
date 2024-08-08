@@ -52,6 +52,7 @@
 		AA7272152C639BC6007551C4 /* Bucket3ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7272142C639BC6007551C4 /* Bucket3ViewModel.swift */; };
 		AA7272172C639BD7007551C4 /* Bucket3TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7272162C639BD7007551C4 /* Bucket3TableViewCell.swift */; };
 		AA7272192C639BE7007551C4 /* Buket3CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7272182C639BE7007551C4 /* Buket3CollectionViewCell.swift */; };
+		AA72721B2C644A3E007551C4 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA72721A2C644A3E007551C4 /* Protocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +100,7 @@
 		AA7272142C639BC6007551C4 /* Bucket3ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bucket3ViewModel.swift; sourceTree = "<group>"; };
 		AA7272162C639BD7007551C4 /* Bucket3TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bucket3TableViewCell.swift; sourceTree = "<group>"; };
 		AA7272182C639BE7007551C4 /* Buket3CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buket3CollectionViewCell.swift; sourceTree = "<group>"; };
+		AA72721A2C644A3E007551C4 /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 		AA7271862C5E5B2D007551C4 /* SeSACRxThreads_Start */ = {
 			isa = PBXGroup;
 			children = (
+				AA72721A2C644A3E007551C4 /* Protocol.swift */,
 				AA72720B2C639614007551C4 /* 52회차 과제 */,
 				AA7272022C63937F007551C4 /* 52회차 수업 코드 복습 리팩 */,
 				AA7271E12C610C8D007551C4 /* 50회차 과제 3번씩 리팩하기 */,
@@ -369,6 +372,7 @@
 				AA7272132C6399CA007551C4 /* Bucket3ViewController.swift in Sources */,
 				AA72718C2C5E5B2D007551C4 /* ViewController.swift in Sources */,
 				AA7272082C6393ED007551C4 /* CafeCollectionViewCell.swift in Sources */,
+				AA72721B2C644A3E007551C4 /* Protocol.swift in Sources */,
 				AA7271DC2C610AD6007551C4 /* PhoneViewModel.swift in Sources */,
 				AA72719C2C5E5B50007551C4 /* BucketListTableVC.swift in Sources */,
 				AA7271B52C5F9104007551C4 /* PasswordVC.swift in Sources */,
