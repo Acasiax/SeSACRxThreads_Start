@@ -9,7 +9,7 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-class Phone3ViewModel {
+final class Phone3ViewModel {
     
     struct Input {
         let tap: ControlEvent<Void>

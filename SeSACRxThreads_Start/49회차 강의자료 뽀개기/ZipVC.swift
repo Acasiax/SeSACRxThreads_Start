@@ -13,7 +13,7 @@ import RxCocoa
 //Zip은 만약 한 관찰자만 보고를 하고, 다른 관찰자가 보고하지 않는다면 Zip은 결과를 내놓지 않아.
 // 근데 CombineLatest
 
-class ZipViewController: UIViewController {
+final class ZipViewController: UIViewController {
     
     let disposeBag = DisposeBag()
     

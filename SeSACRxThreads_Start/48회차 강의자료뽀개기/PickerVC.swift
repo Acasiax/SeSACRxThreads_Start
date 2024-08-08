@@ -10,7 +10,7 @@ import SnapKit
 import RxSwift
 import RxCocoa
 
-class PickerVC: UIViewController {
+final class PickerVC: UIViewController {
     
     let disposeBag = DisposeBag()
     let pickerView = UIPickerView()

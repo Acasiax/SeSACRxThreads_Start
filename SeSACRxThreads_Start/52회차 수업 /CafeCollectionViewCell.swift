@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class CafeCollectionViewCell: UICollectionViewCell {
+final class CafeCollectionViewCell: UICollectionViewCell {
     
   //  static let identifier = "CafeCollectionViewCell"
     let label = UILabel()

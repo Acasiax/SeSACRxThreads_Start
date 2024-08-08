@@ -10,7 +10,7 @@ import SnapKit
 import RxSwift
 import RxCocoa
 
-class WithLatestFromViewController: UIViewController {
+final class WithLatestFromViewController: UIViewController {
     
     let disposeBag = DisposeBag()
     let chalSu = BehaviorSubject(value: "나는 새 영화를 봤어.") //철수

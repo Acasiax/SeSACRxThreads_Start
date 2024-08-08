@@ -13,7 +13,7 @@ import SnapKit
 //CombineLatest 연산자를 사용하면, 여러 Observable의 최신 값을 결합하여 새로운 Observable을 생성할 수 있다. 각 소스 Observable이 최소 한 번의 next 이벤트를 방출해야만 결합된 Observable에 이벤트가 방출된다는 점을 기억해야 함.
 // 결합하려고 하는 각 항목이 모두 최소 1번씩은 next 이벤트를 emit 해야 구독을 시작함을 유의하자!
 
-class CombineLatestViewController: UIViewController {
+final class CombineLatestViewController: UIViewController {
     
     let disposeBag = DisposeBag()
     

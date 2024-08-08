@@ -10,7 +10,7 @@ import SnapKit
 import RxSwift
 import RxCocoa
 
-class PointButton: UIButton {
+final class PointButton: UIButton {
     
     init(title: String) {
         super.init(frame: .zero)

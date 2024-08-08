@@ -10,7 +10,7 @@ import SnapKit
 import RxSwift
 import RxCocoa
 
-class Phone3MvvmVC: UIViewController {
+final class Phone3MvvmVC: UIViewController {
     
     let phoneTextField = SignTextField(placeholderText: "연락처를 입력해주세요")
     let warningLabel: UILabel = {

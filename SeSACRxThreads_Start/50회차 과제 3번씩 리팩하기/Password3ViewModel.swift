@@ -9,7 +9,7 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-class Password3ViewModel {
+final class Password3ViewModel {
     
     struct Input {
         let password: Driver<String>

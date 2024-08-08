@@ -9,7 +9,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class PasswordViewModel {
+final class PasswordViewModel {
     
     struct Input {
         let password: Driver<String>

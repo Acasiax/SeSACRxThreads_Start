@@ -10,7 +10,7 @@ import SnapKit
 import RxSwift
 import RxCocoa
 
-class SignTextField: UITextField {
+final class SignTextField: UITextField {
     init(placeholderText: String) {
         super.init(frame: .zero)
         placeholder = placeholderText
@@ -23,7 +23,7 @@ class SignTextField: UITextField {
     }
 }
 
-class PhoneViewController: UIViewController {
+final class PhoneViewController: UIViewController {
     
     let phoneTextField = SignTextField(placeholderText: "연락처를 입력해주세요")
     let warningLabel: UILabel = {

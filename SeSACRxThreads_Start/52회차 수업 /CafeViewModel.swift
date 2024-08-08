@@ -9,7 +9,7 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-class CafeViewModel {
+final class CafeViewModel {
     
     let disposeBag = DisposeBag()
     

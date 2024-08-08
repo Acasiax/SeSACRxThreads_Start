@@ -10,7 +10,7 @@ import SnapKit
 import RxSwift
 import RxCocoa
 
-class CafeViewController: UIViewController {
+final class CafeViewController: UIViewController {
     
     let tableView = UITableView()
     let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout())

@@ -11,7 +11,7 @@ import RxSwift
 import RxCocoa
 
 
-class PhoneMvvmVC: UIViewController {
+final class PhoneMvvmVC: UIViewController {
     
     let phoneTextField = SignTextField(placeholderText: "연락처를 입력해주세요")
     let warningLabel: UILabel = {

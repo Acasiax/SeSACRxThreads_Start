@@ -10,7 +10,7 @@ import SnapKit
 import RxSwift
 import RxCocoa
 
-class TableViewVC: UIViewController {
+final class TableViewVC: UIViewController {
     let disposeBag = DisposeBag()
     let tableView = UITableView()
     let items = Observable.just([

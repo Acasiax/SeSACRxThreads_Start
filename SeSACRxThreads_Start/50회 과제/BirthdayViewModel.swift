@@ -10,7 +10,7 @@ import RxSwift
 import RxCocoa
 
 // Driver는 공유 상태를 가집니다. 즉, 여러 구독자가 있어도 하나의 소스로부터 이벤트를 받습니다. 이는 효율성을 높이고, 불필요한 중복 작업을 줄여줍니다.
-class BirthdayViewModel {
+final class BirthdayViewModel {
     
     struct Input {
         let date: Observable<Date>

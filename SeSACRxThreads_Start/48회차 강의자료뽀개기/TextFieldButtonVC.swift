@@ -10,7 +10,7 @@ import SnapKit
 import RxSwift
 import RxCocoa
 
-class SignUpTextFieldButtonVC: UIViewController {
+final class SignUpTextFieldButtonVC: UIViewController {
     let signName = UITextField()
     let signEmail = UITextField()
     let signButton = UIButton(type: .system)

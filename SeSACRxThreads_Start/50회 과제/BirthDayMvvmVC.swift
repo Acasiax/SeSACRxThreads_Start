@@ -10,7 +10,7 @@ import SnapKit
 import RxSwift
 import RxCocoa
 
-class BirthdayMvvmVC: UIViewController {
+final class BirthdayMvvmVC: UIViewController {
     
     let birthDayPicker: UIDatePicker = {
         let picker = UIDatePicker()

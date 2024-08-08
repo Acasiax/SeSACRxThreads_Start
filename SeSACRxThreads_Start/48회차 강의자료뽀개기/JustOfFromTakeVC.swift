@@ -10,7 +10,7 @@ import SnapKit
 import RxSwift
 import RxCocoa
 
-class JustOfFromTakeVC: UIViewController {
+final class JustOfFromTakeVC: UIViewController {
     let disposeBag = DisposeBag()
       
     override func viewDidLoad() {
