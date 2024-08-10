@@ -53,6 +53,17 @@
 		AA7272172C639BD7007551C4 /* Bucket3TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7272162C639BD7007551C4 /* Bucket3TableViewCell.swift */; };
 		AA7272192C639BE7007551C4 /* Buket3CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7272182C639BE7007551C4 /* Buket3CollectionViewCell.swift */; };
 		AA72721B2C644A3E007551C4 /* Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA72721A2C644A3E007551C4 /* Protocol.swift */; };
+		AA7272712C66F100007551C4 /* BoxOfficeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA72726A2C66F100007551C4 /* BoxOfficeViewController.swift */; };
+		AA7272722C66F100007551C4 /* BoxOfficeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA72726B2C66F100007551C4 /* BoxOfficeViewModel.swift */; };
+		AA7272732C66F100007551C4 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA72726C2C66F100007551C4 /* Movie.swift */; };
+		AA7272742C66F100007551C4 /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA72726D2C66F100007551C4 /* MovieCollectionViewCell.swift */; };
+		AA7272752C66F100007551C4 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA72726E2C66F100007551C4 /* MovieTableViewCell.swift */; };
+		AA7272762C66F100007551C4 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA72726F2C66F100007551C4 /* NetworkManager.swift */; };
+		AA72727B2C66F4C2007551C4 /* MyBoxVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA72727A2C66F4C2007551C4 /* MyBoxVC.swift */; };
+		AA7272812C66F80F007551C4 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = AA7272802C66F80F007551C4 /* .gitignore */; };
+		AA7272832C66F81B007551C4 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7272822C66F81B007551C4 /* APIKey.swift */; };
+		AA7272852C66F872007551C4 /* MyMoviewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7272842C66F872007551C4 /* MyMoviewCollectionViewCell.swift */; };
+		AA7272872C66FAFB007551C4 /* MyMovieTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7272862C66FAFB007551C4 /* MyMovieTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -101,6 +112,17 @@
 		AA7272162C639BD7007551C4 /* Bucket3TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bucket3TableViewCell.swift; sourceTree = "<group>"; };
 		AA7272182C639BE7007551C4 /* Buket3CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buket3CollectionViewCell.swift; sourceTree = "<group>"; };
 		AA72721A2C644A3E007551C4 /* Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocol.swift; sourceTree = "<group>"; };
+		AA72726A2C66F100007551C4 /* BoxOfficeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoxOfficeViewController.swift; sourceTree = "<group>"; };
+		AA72726B2C66F100007551C4 /* BoxOfficeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoxOfficeViewModel.swift; sourceTree = "<group>"; };
+		AA72726C2C66F100007551C4 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		AA72726D2C66F100007551C4 /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
+		AA72726E2C66F100007551C4 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		AA72726F2C66F100007551C4 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		AA72727A2C66F4C2007551C4 /* MyBoxVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBoxVC.swift; sourceTree = "<group>"; };
+		AA7272802C66F80F007551C4 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		AA7272822C66F81B007551C4 /* APIKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		AA7272842C66F872007551C4 /* MyMoviewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMoviewCollectionViewCell.swift; sourceTree = "<group>"; };
+		AA7272862C66FAFB007551C4 /* MyMovieTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMovieTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +158,9 @@
 		AA7271862C5E5B2D007551C4 /* SeSACRxThreads_Start */ = {
 			isa = PBXGroup;
 			children = (
+				AA7272802C66F80F007551C4 /* .gitignore */,
+				AA7272822C66F81B007551C4 /* APIKey.swift */,
+				AA7272692C66F02E007551C4 /* 53회차 수업 코드 복습 리팩 */,
 				AA72721A2C644A3E007551C4 /* Protocol.swift */,
 				AA72720B2C639614007551C4 /* 52회차 과제 */,
 				AA7272022C63937F007551C4 /* 52회차 수업 코드 복습 리팩 */,
@@ -273,6 +298,40 @@
 			path = "52회차 과제";
 			sourceTree = "<group>";
 		};
+		AA7272692C66F02E007551C4 /* 53회차 수업 코드 복습 리팩 */ = {
+			isa = PBXGroup;
+			children = (
+				AA7272792C66F484007551C4 /* 박스오피스 2번째 리팩 */,
+				AA7272702C66F100007551C4 /* BoxOffice */,
+			);
+			name = "53회차 수업 코드 복습 리팩";
+			path = "53회차 수업 코드 복습 리팩";
+			sourceTree = "<group>";
+		};
+		AA7272702C66F100007551C4 /* BoxOffice */ = {
+			isa = PBXGroup;
+			children = (
+				AA72726A2C66F100007551C4 /* BoxOfficeViewController.swift */,
+				AA72726B2C66F100007551C4 /* BoxOfficeViewModel.swift */,
+				AA72726C2C66F100007551C4 /* Movie.swift */,
+				AA72726D2C66F100007551C4 /* MovieCollectionViewCell.swift */,
+				AA72726E2C66F100007551C4 /* MovieTableViewCell.swift */,
+				AA72726F2C66F100007551C4 /* NetworkManager.swift */,
+			);
+			path = BoxOffice;
+			sourceTree = "<group>";
+		};
+		AA7272792C66F484007551C4 /* 박스오피스 2번째 리팩 */ = {
+			isa = PBXGroup;
+			children = (
+				AA72727A2C66F4C2007551C4 /* MyBoxVC.swift */,
+				AA7272842C66F872007551C4 /* MyMoviewCollectionViewCell.swift */,
+				AA7272862C66FAFB007551C4 /* MyMovieTableCell.swift */,
+			);
+			name = "박스오피스 2번째 리팩";
+			path = "박스오피스 2번째 리팩";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -340,6 +399,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA7272812C66F80F007551C4 /* .gitignore in Resources */,
 				AA7271912C5E5B2E007551C4 /* Assets.xcassets in Resources */,
 				AA7271942C5E5B2E007551C4 /* Base in Resources */,
 				AA72718F2C5E5B2D007551C4 /* Base in Resources */,
@@ -353,6 +413,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA7272762C66F100007551C4 /* NetworkManager.swift in Sources */,
+				AA7272732C66F100007551C4 /* Movie.swift in Sources */,
+				AA7272722C66F100007551C4 /* BoxOfficeViewModel.swift in Sources */,
 				AA7271C32C5FC905007551C4 /* PassWordVCExample.swift in Sources */,
 				AA7272042C6393A2007551C4 /* CafeViewController.swift in Sources */,
 				AA7271CC2C5FD395007551C4 /* ZipVC.swift in Sources */,
@@ -360,6 +423,7 @@
 				AA7271C52C5FCA2F007551C4 /* CombineLatestVC.swift in Sources */,
 				AA7272062C6393B3007551C4 /* CafeViewModel.swift in Sources */,
 				AA7271E52C610DCC007551C4 /* Password3ViewModel.swift in Sources */,
+				AA7272832C66F81B007551C4 /* APIKey.swift in Sources */,
 				AA7271D62C610867007551C4 /* BirthDayMvvmVC.swift in Sources */,
 				AA7271BF2C5FADC3007551C4 /* TextFieldButtonVC.swift in Sources */,
 				AA7271DA2C610A83007551C4 /* PhoneMvvmVC.swift in Sources */,
@@ -368,7 +432,10 @@
 				AA7271D82C6109DE007551C4 /* BirthdayViewModel.swift in Sources */,
 				AA7271AD2C5F5E36007551C4 /* BucketListTableVC2.swift in Sources */,
 				AA7271C82C5FCD85007551C4 /* SearchVC49Example.swift in Sources */,
+				AA7272712C66F100007551C4 /* BoxOfficeViewController.swift in Sources */,
 				AA7271DE2C610B63007551C4 /* PasswordMvvmVC.swift in Sources */,
+				AA7272742C66F100007551C4 /* MovieCollectionViewCell.swift in Sources */,
+				AA7272752C66F100007551C4 /* MovieTableViewCell.swift in Sources */,
 				AA7272132C6399CA007551C4 /* Bucket3ViewController.swift in Sources */,
 				AA72718C2C5E5B2D007551C4 /* ViewController.swift in Sources */,
 				AA7272082C6393ED007551C4 /* CafeCollectionViewCell.swift in Sources */,
@@ -379,6 +446,9 @@
 				AA7271B12C5F76BF007551C4 /* BirthDayVC.swift in Sources */,
 				AA7271882C5E5B2D007551C4 /* AppDelegate.swift in Sources */,
 				AA7271A82C5E7FE9007551C4 /* BasicButtonViewController.swift in Sources */,
+				AA72727B2C66F4C2007551C4 /* MyBoxVC.swift in Sources */,
+				AA7272852C66F872007551C4 /* MyMoviewCollectionViewCell.swift in Sources */,
+				AA7272872C66FAFB007551C4 /* MyMovieTableCell.swift in Sources */,
 				AA7271E02C610B85007551C4 /* PasswordViewModel.swift in Sources */,
 				AA7272152C639BC6007551C4 /* Bucket3ViewModel.swift in Sources */,
 				AA72718A2C5E5B2D007551C4 /* SceneDelegate.swift in Sources */,
