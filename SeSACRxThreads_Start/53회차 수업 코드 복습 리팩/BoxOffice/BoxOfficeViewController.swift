@@ -54,12 +54,13 @@ class BoxOfficeViewController: UIViewController {
             let result = Int.random(in: 1...100)
             
             if result >= 1 && result <= 45 {
-                value.onNext(result)
+                value.onNext(result) // onNext(result)를 통해 해당 값을 방출
             } else {
                 value.onCompleted()
+         
                // value.onError()
             }
-            return Disposables.create()
+            return Disposables.create() 
         }
         
         random

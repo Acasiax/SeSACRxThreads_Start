@@ -20,6 +20,9 @@ final class MyBoxVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configure()
+        bind()
+        createObservable()
     }
     
     func configure() {
@@ -34,6 +37,40 @@ final class MyBoxVC: UIViewController {
         collectionView.register(MyMovieCollectionViewCell.self, forCellWithReuseIdentifier: MyMovieCollectionViewCell.identifier)
         
     }
+    
+    func createObservable() {
+        
+        //MARK: - Observable 생성
+        let ramdom = Observable<Int>.create { value in
+            
+            let result = Int.random(in: 1...100)
+            
+            if result >= 1 && result <= 45 {
+                value.onNext(result) // onNext(result)를 통해 해당 값을 방출
+                
+            } else {
+                value.onCompleted() // 그 외의 값이면 onCompleted()를 호출하여 스트림을 완료
+            }
+            return Disposables.create() //Disposable을 반환하여 리소스 정리를 수행
+        }
+        
+        //MARK: - Observable 구독:
+        ramdom
+            .subscribe(with: self) { owner, value in
+                print("랜덤값 \(value)")
+            } onCompleted: { value in
+                print("Completed")
+            } onDisposed: { value in
+                print("onDisposed")
+            }
+            .disposed(by: disposeBag)
+    }
+    
+    func bind() {
+        
+        
+    }
+    
     
     static func layout() -> UICollectionViewFlowLayout {
         let layout = UICollectionViewFlowLayout()
