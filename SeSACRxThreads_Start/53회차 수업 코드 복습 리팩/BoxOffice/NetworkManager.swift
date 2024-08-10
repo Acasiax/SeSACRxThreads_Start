@@ -48,7 +48,8 @@ final class NetworkManager {
                     return
                 }
                 
-                if let data = data, let appData = try? JSONDecoder().decode(Movie.self, from: data) {
+                if let data = data,
+                   let appData = try? JSONDecoder().decode(Movie.self, from: data) {
                     observer.onNext(appData)
                     observer.onCompleted() //🌟🌟
                 } else {

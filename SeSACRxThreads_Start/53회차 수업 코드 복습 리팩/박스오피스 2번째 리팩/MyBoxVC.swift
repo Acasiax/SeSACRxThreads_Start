@@ -68,6 +68,9 @@ final class MyBoxVC: UIViewController {
     
     func bind() {
         
+        let recentText = PublishSubject<String>()
+        
+        
         
     }
     

@@ -64,6 +64,8 @@
 		AA7272832C66F81B007551C4 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7272822C66F81B007551C4 /* APIKey.swift */; };
 		AA7272852C66F872007551C4 /* MyMoviewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7272842C66F872007551C4 /* MyMoviewCollectionViewCell.swift */; };
 		AA7272872C66FAFB007551C4 /* MyMovieTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7272862C66FAFB007551C4 /* MyMovieTableCell.swift */; };
+		AA7272892C6707EC007551C4 /* MyMovieNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA7272882C6707EC007551C4 /* MyMovieNetworkManager.swift */; };
+		AA72728B2C67157F007551C4 /* MyBoxOfficeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA72728A2C67157F007551C4 /* MyBoxOfficeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -123,6 +125,8 @@
 		AA7272822C66F81B007551C4 /* APIKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		AA7272842C66F872007551C4 /* MyMoviewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMoviewCollectionViewCell.swift; sourceTree = "<group>"; };
 		AA7272862C66FAFB007551C4 /* MyMovieTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMovieTableCell.swift; sourceTree = "<group>"; };
+		AA7272882C6707EC007551C4 /* MyMovieNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMovieNetworkManager.swift; sourceTree = "<group>"; };
+		AA72728A2C67157F007551C4 /* MyBoxOfficeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBoxOfficeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -327,6 +331,8 @@
 				AA72727A2C66F4C2007551C4 /* MyBoxVC.swift */,
 				AA7272842C66F872007551C4 /* MyMoviewCollectionViewCell.swift */,
 				AA7272862C66FAFB007551C4 /* MyMovieTableCell.swift */,
+				AA7272882C6707EC007551C4 /* MyMovieNetworkManager.swift */,
+				AA72728A2C67157F007551C4 /* MyBoxOfficeViewModel.swift */,
 			);
 			name = "박스오피스 2번째 리팩";
 			path = "박스오피스 2번째 리팩";
@@ -429,6 +435,7 @@
 				AA7271DA2C610A83007551C4 /* PhoneMvvmVC.swift in Sources */,
 				AA7271BD2C5FAA0A007551C4 /* SwitchVC.swift in Sources */,
 				AA7271B92C5F992D007551C4 /* PickerVC.swift in Sources */,
+				AA72728B2C67157F007551C4 /* MyBoxOfficeViewModel.swift in Sources */,
 				AA7271D82C6109DE007551C4 /* BirthdayViewModel.swift in Sources */,
 				AA7271AD2C5F5E36007551C4 /* BucketListTableVC2.swift in Sources */,
 				AA7271C82C5FCD85007551C4 /* SearchVC49Example.swift in Sources */,
@@ -459,6 +466,7 @@
 				AA7271AA2C5E84FA007551C4 /* BaseViewController.swift in Sources */,
 				AA7271E72C612909007551C4 /* Phone3VC.swift in Sources */,
 				AA72720A2C6393F5007551C4 /* CafeTableViewCell.swift in Sources */,
+				AA7272892C6707EC007551C4 /* MyMovieNetworkManager.swift in Sources */,
 				AA7271B32C5F79AE007551C4 /* PhoneNumberVC.swift in Sources */,
 				AA7271C12C5FBEFD007551C4 /* JustOfFromTakeVC.swift in Sources */,
 				AA7271A62C5E5C69007551C4 /* CustomSImpleTableVC.swift in Sources */,
