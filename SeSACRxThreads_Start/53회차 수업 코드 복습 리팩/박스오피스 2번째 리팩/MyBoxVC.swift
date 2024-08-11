@@ -18,6 +18,8 @@ final class MyBoxVC: UIViewController {
     
     let disposeBag = DisposeBag()
     
+    let viewModel = MyBoxOfficeViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
@@ -69,6 +71,10 @@ final class MyBoxVC: UIViewController {
     func bind() {
         
         let recentText = PublishSubject<String>()
+        
+        let input = MyBoxOfficeViewModel.Input(searchButtonTap: searchBar.rx.searchButtonClicked, searchText: searchBar.rx.text.orEmpty, recentText: recentText)
+        
+        let output = viewModel.transform(input: input)
         
         
         

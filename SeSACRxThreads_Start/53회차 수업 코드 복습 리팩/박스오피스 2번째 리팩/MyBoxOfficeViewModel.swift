@@ -51,6 +51,7 @@ class MyBoxOfficeViewModel {
         
             .withLatestFrom(input.searchText)
             .distinctUntilChanged()
+        //.map을 사용하여 입력된 텍스트를 숫자로 변환합니다. 변환이 실패할 경우 기본값 20240701을 사용합니다.
             .map {
                 guard let intText = Int($0) else {
                     return 20240701
