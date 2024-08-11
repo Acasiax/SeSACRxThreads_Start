@@ -76,6 +76,11 @@ final class MyBoxVC: UIViewController {
         
         let output = viewModel.transform(input: input)
         
+        output.recentList
+            .bind(to: collectionView.rx.items(cellIdentifier: MyMovieCollectionViewCell.identifier, cellType: MyMovieCollectionViewCell.self)) {  (row, element, cell ) in
+                cell.label.text = element
+            }.disposed(by: disposeBag)
+        
         
         
     }
