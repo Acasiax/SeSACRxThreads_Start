@@ -25,6 +25,7 @@ final class MyMovieTableViewCell: UITableViewCell {
         imageView.clipsToBounds = true
         imageView.backgroundColor = .systemMint
         imageView.layer.cornerRadius = 8
+        return imageView
     }()
     
     let downloadButton: UIButton = {

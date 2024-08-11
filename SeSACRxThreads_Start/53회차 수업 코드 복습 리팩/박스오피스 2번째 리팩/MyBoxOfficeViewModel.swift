@@ -26,7 +26,8 @@ class MyBoxOfficeViewModel {
     }
     
     struct Output {
-        
+        let movieList: Observable<[DailyBoxOfficeList]>
+        let recentList: Observable<[String]>
     }
     
     func transform(input: Input) -> Output {
