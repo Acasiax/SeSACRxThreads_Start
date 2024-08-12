@@ -60,7 +60,7 @@ class BoxOfficeViewController: UIViewController {
          
                // value.onError()
             }
-            return Disposables.create() 
+            return Disposables.create()
         }
         
         random
@@ -153,7 +153,6 @@ class BoxOfficeViewController: UIViewController {
         
         collectionView.backgroundColor = .lightGray
         collectionView.register(MovieCollectionViewCell.self, forCellWithReuseIdentifier: MovieCollectionViewCell.identifier)
-        collectionView.backgroundColor = .lightGray
         collectionView.snp.makeConstraints { make in
             make.top.equalTo(view.safeAreaLayoutGuide)
             make.horizontalEdges.equalToSuperview()

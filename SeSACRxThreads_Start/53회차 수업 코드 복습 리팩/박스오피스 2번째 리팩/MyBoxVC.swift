@@ -37,6 +37,20 @@ final class MyBoxVC: UIViewController {
         
         collectionView.backgroundColor = .lightGray
         collectionView.register(MyMovieCollectionViewCell.self, forCellWithReuseIdentifier: MyMovieCollectionViewCell.identifier)
+        collectionView.snp.makeConstraints { make in
+            make.top.equalTo(view.safeAreaLayoutGuide)
+            make.horizontalEdges.equalToSuperview()
+            make.height.equalTo(50)
+        }
+        
+        tableView.register(MovieTableViewCell.self, forCellReuseIdentifier: MovieTableViewCell.identifier)
+        tableView.backgroundColor = .systemGreen
+        tableView.rowHeight = 100
+        tableView.snp.makeConstraints { make in
+            make.top.equalTo(view.safeAreaLayoutGuide).offset(50)
+            make.horizontalEdges.equalToSuperview()
+            make.bottom.equalToSuperview()
+        }
         
     }
     
